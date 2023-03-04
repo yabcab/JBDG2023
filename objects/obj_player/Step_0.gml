@@ -2,12 +2,13 @@ vsp = approach(vsp,18,0.5)
 
 if controllable
 {
+	var axdir = gamepad_axis_value(0,gp_axislh)
 	var holdrun = 0 //gamepad_button_check(0,CONT_RT)
 	var runsp = 3
 	var walksp = 12
-	if gamepad_axis_value(0,gp_axislh) < 0
+	if axdir < 0
 		hsp = approach(hsp,-walksp - (holdrun * runsp),0.25)
-	else if gamepad_axis_value(0,gp_axislh) > 0
+	else if axdir > 0
 		hsp = approach(hsp,walksp + (holdrun * runsp),0.25)
 	else
 		hsp = approach(hsp,0,0.5)
@@ -21,5 +22,11 @@ if controllable
 	{
 		vsp = -3
 		jumping = false
+	}
+	
+	if place_meeting(x + hsp,y,obj_solid) && abs(hsp) > 4
+	{
+		x -= hsp
+		hsp *= -0.75
 	}
 }

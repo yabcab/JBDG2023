@@ -1,0 +1,1 @@
+draw_text(25,500 + yoff,text)

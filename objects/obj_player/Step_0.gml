@@ -6,6 +6,9 @@ if controllable
 	var holdrun = 0 //gamepad_button_check(0,CONT_RB)
 	var runsp = 3
 	var walksp = 12
+	
+	if axdir != 0
+		facing = sign(axdir)
 	if axdir < 0
 		hsp = approach(hsp,-walksp - (holdrun * runsp),0.25)
 	else if axdir > 0

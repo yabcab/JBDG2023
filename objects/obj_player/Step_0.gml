@@ -3,7 +3,7 @@ vsp = approach(vsp,18,0.5)
 if controllable
 {
 	var axdir = gamepad_axis_value(0,gp_axislh)
-	var holdrun = 0 //gamepad_button_check(0,CONT_RT)
+	var holdrun = 0 //gamepad_button_check(0,CONT_RB)
 	var runsp = 3
 	var walksp = 12
 	if axdir < 0

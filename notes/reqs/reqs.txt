@@ -2,3 +2,5 @@ MUST:
 -use controller support (made to be played on xbox via uwp)
 -NEVER update from this specific beta version
 -make it quickly
+-NPCs with strange dialogue
+-Roomnames w/ cryptic message embeded!!!! (with secret rooms making it harder to decode)

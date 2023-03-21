@@ -1,4 +1,5 @@
 function init_vars() // this is gonna look stupid out of the project it was taken from so lol
+// 3/21/23 - ok looking at this again this is fucked up lmfao
 {
 	//collider
 	use_enemysolids = false

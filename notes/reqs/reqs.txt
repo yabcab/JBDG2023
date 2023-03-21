@@ -2,5 +2,9 @@ MUST:
 -use controller support (made to be played on xbox via uwp)
 -NEVER update from this specific beta version
 -make it quickly
--NPCs with strange dialogue
--Roomnames w/ cryptic message embeded!!!! (with secret rooms making it harder to decode)
+-NPCs with strange funny dialogue
+-Roomnames w/ cryptic message embeded. Find it, jarlatag...
+
+WOULD BE COOL:
+-hidden challenge room with some one the secret message embedded in it
+-make ufra and probably some others do funny voicework for the game

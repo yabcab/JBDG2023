@@ -31,8 +31,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_62384D8A","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_A5EBEDC","path":"rooms/rm_test/rm_test.yy",},
+    {"name":"inst_62384D8A","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_3CEBDFED","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_497C0155","path":"rooms/rm_test/rm_test.yy",},
     {"name":"inst_1CF5040D","path":"rooms/rm_test/rm_test.yy",},

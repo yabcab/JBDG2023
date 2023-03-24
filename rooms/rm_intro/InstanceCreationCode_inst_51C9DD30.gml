@@ -1,1 +1,1 @@
-txt = "Use the left stick to move"
+txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nTHE QUICK BROWN FOX JUMPED OVER THE LAZY DOG\nabcdefghijklmnopqrstuvwxyz\nThe Quick Brown Fox Jumped Over The Lazy Dog\n`1234567890-=~!@#$%^&*()_+[]\\{}|;':\",./<>?\n♡♢♤♧☺" //"Use the left stick to move"

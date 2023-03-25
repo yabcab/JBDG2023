@@ -48,7 +48,7 @@ if abs(hsp) > 10
 if grounded && abs(hsp) > 2
 {
 	runtimer++
-	if runtimer > 15 - abs(hsp)
+	if runtimer > 17 - abs(hsp)
 	{
 		runtimer = 0
 		if soundpick = sfx_run1
@@ -59,3 +59,5 @@ if grounded && abs(hsp) > 2
 		play_sfx(soundpick,false)
 	}
 }
+else
+	runtimer = 99

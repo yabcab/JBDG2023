@@ -2,6 +2,8 @@ init_vars()
 gamepad_set_axis_deadzone(0,0.3)
 
 jumping = false
+soundpick = choose(sfx_run1,sfx_run2)
+runtimer = 0
 
 #macro CONT_A gp_face1
 #macro CONT_RB gp_shoulderrb
@@ -11,6 +13,7 @@ jumping = false
 
 //NOTE - keyboard support comes SECOND. 
 //you are building Trails and Tribulations primarily to be run on XBOX UWP WITH A CONTROLLER!!
+//bitch
 #macro KEY_L keyboard_check(vk_left)
 #macro KEY_R keyboard_check(vk_right)
 #macro KEY_JMP keyboard_check(ord("Z"))

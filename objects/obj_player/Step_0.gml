@@ -39,6 +39,23 @@ if controllable
 		hsp *= -0.75
 	}
 }
+else
+	hsp = lerp(hsp,0,0.2)
 
 if abs(hsp) > 10
 	instance_create_depth(x,y,depth + 1,obj_trail)
+	
+if grounded && abs(hsp) > 2
+{
+	runtimer++
+	if runtimer > 15 - abs(hsp)
+	{
+		runtimer = 0
+		if soundpick = sfx_run1
+			soundpick = sfx_run2
+		else
+			soundpick = sfx_run1
+		
+		play_sfx(soundpick,false)
+	}
+}

@@ -22,6 +22,7 @@ if controllable
 	
 	if (grounded || place_meeting(x,y + 20,obj_solid)) && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
 	{
+		play_sfx(sfx_jump)
 		vsp = -15
 		jumping = true
 	}
@@ -33,7 +34,11 @@ if controllable
 	
 	if place_meeting(x + hsp,y,obj_solid) && abs(hsp) > 4
 	{
+		play_sfx(choose(sfx_hitwall1,sfx_hitwall2,sfx_hitwall3),false)
 		x -= hsp
 		hsp *= -0.75
 	}
 }
+
+if abs(hsp) > 10
+	instance_create_depth(x,y,depth + 1,obj_trail)

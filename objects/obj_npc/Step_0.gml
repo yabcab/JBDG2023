@@ -1,8 +1,28 @@
-var text_wrap_width = 750
+var text_wrap_width = 775
 
 if speaking
 {
-	text_checker()
+	if text_checker()
+	{
+		if text_selected < max_texts
+		{
+			textcopy = ""
+			text_spot = 1
+			text_selected++
+		}
+		else
+		{
+			speaking = false
+			textbox_show = false
+			text_selected = 0
+			textcopy = ""
+			textcopy_timer = 0
+			text_spot = 1
+
+			controllable = true
+			obj_player.talking = false
+		}
+	}
 	textbox_yoff = lerp(textbox_yoff,0,0.2)
 	textcopy_timer--
 	if textcopy_timer <= 0 && text_spot < string_length(text[text_selected]) + 1

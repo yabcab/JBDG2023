@@ -24,6 +24,15 @@ speaking = false
 
 //435y
 surf = surface_create(960,105)
-drawnbg = spr_playerplaceholder
+drawnbg = spr_textbg_placeholder
 xscroll = 0
 yscroll = 0
+
+npcid = npcs.lemonhead
+enum npcs
+{
+	lemonhead,
+}
+alarm[0] = 1
+talkspr = sprite_index
+idlespr = sprite_index

@@ -2,6 +2,7 @@ function text_checker()
 {
 	switch text[text_selected]
 	{
+		//old system remains
 		case "@TUTORIAL_BECOMEPLAT":
 		{
 			//obj_player.state = playerstate.plat
@@ -14,5 +15,17 @@ function text_checker()
 			//	audio_play_sound(mu_tutorial_b,1,1)
 		}
 		break;
+		
+		case "@TEST":
+		{
+			with instance_create_depth(x,y,0,obj_roomname)
+				text = "The test was a success!"
+		}
+		break;
 	}
+	
+	if string_copy(text[text_selected],1,1) = "@"
+		return true;
+	else
+		return false;
 }

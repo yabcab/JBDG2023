@@ -1,4 +1,4 @@
-var xx = 20
+var xx = 5
 var yy = 450 + textbox_yoff
 if !surface_exists(surf)
 	surf = surface_create(960,105)
@@ -8,4 +8,9 @@ surface_reset_target()
 draw_surface(surf,0,435 + textbox_yoff)
 draw_sprite(spr_textbox_border,0,0,textbox_yoff)
 draw_set_font(fnt_game)
+draw_set_color(c_black)
+draw_set_alpha(0.2)
+draw_text(xx-1,yy-1,textcopy)
+draw_set_color(c_white)
+draw_set_alpha(1)
 draw_text(xx,yy,textcopy)

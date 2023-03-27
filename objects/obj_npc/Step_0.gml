@@ -101,3 +101,8 @@ if xscroll < -sprite_get_width(drawnbg)
 	xscroll += sprite_get_width(drawnbg)
 if yscroll < -sprite_get_height(drawnbg)
 	yscroll += sprite_get_height(drawnbg)
+	
+if speaking
+	sprite_index = talkspr
+else
+	sprite_index = idlespr

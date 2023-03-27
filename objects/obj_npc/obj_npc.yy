@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_nextlevel",
-    "path": "sprites/spr_nextlevel/spr_nextlevel.yy",
+    "name": "spr_npcplaceholder",
+    "path": "sprites/spr_npcplaceholder/spr_npcplaceholder.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,0 +1,1 @@
+txt = "Spikes can hurt (you will die)"

@@ -1,0 +1,1 @@
+text = "Everytime you hit a wall I become angrier."

@@ -4,6 +4,8 @@ gamepad_set_axis_deadzone(0,0.3)
 jumping = false
 soundpick = choose(sfx_run1,sfx_run2)
 runtimer = 0
+checkpointx = xstart
+checkpointy = ystart
 
 #macro CONT_A gp_face1
 #macro CONT_RB gp_shoulderrb

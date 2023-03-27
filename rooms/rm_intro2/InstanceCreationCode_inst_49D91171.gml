@@ -1,0 +1,1 @@
+txt = "Checkpoints save your position in the\nstage in case you die"

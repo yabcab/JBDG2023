@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_spikes","path":"sprites/spr_spikes/spr_spikes.yy",},"order":7,},
+    {"id":{"name":"achievement ideas","path":"notes/achievement ideas/achievement ideas.yy",},"order":2,},
     {"id":{"name":"obj_roomname","path":"objects/obj_roomname/obj_roomname.yy",},"order":2,},
     {"id":{"name":"mu_introtutorial","path":"sounds/mu_introtutorial/mu_introtutorial.yy",},"order":0,},
     {"id":{"name":"spr_gamefont_boil1","path":"sprites/spr_gamefont_boil1/spr_gamefont_boil1.yy",},"order":0,},

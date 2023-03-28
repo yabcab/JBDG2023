@@ -20,7 +20,7 @@ if controllable
 	else
 		hsp = approach(hsp,0,0.5)
 	
-	if (grounded || place_meeting(x,y + 20,obj_solid)) && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
+	if (grounded || place_meeting(x,y,obj_airjump) || place_meeting(x,y + 20,obj_solid)) && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
 	{
 		play_sfx(sfx_jump)
 		vsp = -15

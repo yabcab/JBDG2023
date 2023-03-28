@@ -1,0 +1,4 @@
+audio_stop_sound(sfx_rainloop1)
+audio_stop_sound(sfx_rainloop2)
+audio_stop_sound(sfx_rainloop3)
+audio_resume_sound(mu_introtutorial)

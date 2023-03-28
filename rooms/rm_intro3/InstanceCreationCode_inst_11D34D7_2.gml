@@ -1,0 +1,1 @@
+text = "Less going down and more going up"

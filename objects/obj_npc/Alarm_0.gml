@@ -7,4 +7,18 @@ switch npcid
 		idlespr = spr_lemonhead_idle
 	}
 	break;
+	case npcs.sadguy:
+	{
+		drawnbg = spr_textbg_sadguy
+		talkspr = spr_sadguy_talk
+		idlespr = spr_sadguy_idle
+	}
+	break;
+	case npcs.badfather:
+	{
+		drawnbg = spr_textbg_father
+		talkspr = spr_father_talk
+		idlespr = spr_father_idle
+	}
+	break;
 }

@@ -32,6 +32,8 @@ npcid = npcs.lemonhead
 enum npcs
 {
 	lemonhead,
+	badfather,
+	sadguy,
 }
 alarm[0] = 1
 talkspr = sprite_index

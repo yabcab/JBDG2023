@@ -23,7 +23,7 @@ textbox_yoff = 100
 speaking = false
 
 //435y
-surf = surface_create(960,105)
+surf = surface_create(960,115)
 drawnbg = spr_textbg_placeholder
 xscroll = 0
 yscroll = 0

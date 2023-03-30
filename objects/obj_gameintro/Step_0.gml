@@ -21,8 +21,11 @@ else
 		else
 		{
 			rectalph = approach(rectalph,0,0.1)
-			if gamepad_button_check_pressed(0,CONT_A)
+			if (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P) && !pressedme
+			{
 				controllable = true
+				pressedme = true
+			}
 		}
 	}
 }

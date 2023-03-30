@@ -1,4 +1,4 @@
-var text_wrap_width = 775
+var text_wrap_width = 825
 
 if speaking
 {

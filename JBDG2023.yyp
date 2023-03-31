@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_spikes","path":"sprites/spr_spikes/spr_spikes.yy",},"order":7,},
+    {"id":{"name":"rm_intro4","path":"rooms/rm_intro4/rm_intro4.yy",},"order":3,},
     {"id":{"name":"achievement ideas","path":"notes/achievement ideas/achievement ideas.yy",},"order":2,},
     {"id":{"name":"obj_roomname","path":"objects/obj_roomname/obj_roomname.yy",},"order":2,},
     {"id":{"name":"mu_introtutorial","path":"sounds/mu_introtutorial/mu_introtutorial.yy",},"order":0,},
@@ -14,6 +15,7 @@
     {"id":{"name":"sfx_hitwall2","path":"sounds/sfx_hitwall2/sfx_hitwall2.yy",},"order":1,},
     {"id":{"name":"spr_collect","path":"sprites/spr_collect/spr_collect.yy",},"order":0,},
     {"id":{"name":"mu_intermission","path":"sounds/mu_intermission/mu_intermission.yy",},"order":2,},
+    {"id":{"name":"spr_npcarrow","path":"sprites/spr_npcarrow/spr_npcarrow.yy",},"order":5,},
     {"id":{"name":"obj_trail","path":"objects/obj_trail/obj_trail.yy",},"order":9,},
     {"id":{"name":"sfx_run2","path":"sounds/sfx_run2/sfx_run2.yy",},"order":6,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":10,},
@@ -32,6 +34,7 @@
     {"id":{"name":"sfx_rainloop2","path":"sounds/sfx_rainloop2/sfx_rainloop2.yy",},"order":8,},
     {"id":{"name":"reqs","path":"notes/reqs/reqs.yy",},"order":0,},
     {"id":{"name":"bg_rain5","path":"sprites/bg_rain5/bg_rain5.yy",},"order":4,},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"order":5,},
     {"id":{"name":"spr_lemonhead_talk","path":"sprites/spr_lemonhead_talk/spr_lemonhead_talk.yy",},"order":2,},
     {"id":{"name":"spr_gamefont_boil2","path":"sprites/spr_gamefont_boil2/spr_gamefont_boil2.yy",},"order":1,},
     {"id":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"order":8,},
@@ -43,7 +46,7 @@
     {"id":{"name":"spr_playerplaceholder","path":"sprites/spr_playerplaceholder/spr_playerplaceholder.yy",},"order":4,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_lemonhead_idle","path":"sprites/spr_lemonhead_idle/spr_lemonhead_idle.yy",},"order":1,},
-    {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":2,},
+    {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":0,},
     {"id":{"name":"spr_father_idle","path":"sprites/spr_father_idle/spr_father_idle.yy",},"order":5,},
     {"id":{"name":"bg_rain4","path":"sprites/bg_rain4/bg_rain4.yy",},"order":3,},
     {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},"order":4,},
@@ -72,7 +75,7 @@
     {"id":{"name":"spr_npcplaceholder","path":"sprites/spr_npcplaceholder/spr_npcplaceholder.yy",},"order":0,},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"order":3,},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},"order":3,},
-    {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":0,},
+    {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
@@ -98,6 +101,7 @@
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"rm_intro2","path":"rooms/rm_intro2/rm_intro2.yy",},},
     {"roomId":{"name":"rm_intro3","path":"rooms/rm_intro3/rm_intro3.yy",},},
+    {"roomId":{"name":"rm_intro4","path":"rooms/rm_intro4/rm_intro4.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -124,7 +128,7 @@
     {"folderPath":"folders/Sounds/sfx.yy","order":2,"resourceVersion":"1.0","name":"sfx","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/misc/textbg.yy","order":3,"resourceVersion":"1.0","name":"textbg","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/misc/npc.yy","order":4,"resourceVersion":"1.0","name":"npc","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Rooms/game.yy","order":4,"resourceVersion":"1.0","name":"game","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Rooms/game.yy","order":2,"resourceVersion":"1.0","name":"game","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/bg.yy","order":10,"resourceVersion":"1.0","name":"bg","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [

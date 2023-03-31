@@ -12,7 +12,6 @@ else
 	image_alpha = approach(image_alpha,0,0.021)	
 	if image_alpha = 0 && !set2
 	{
-		
 		if image_index < 2
 		{
 			alarm[1] = 1

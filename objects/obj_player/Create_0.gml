@@ -1,3 +1,4 @@
+depth = -1
 init_vars()
 gamepad_set_axis_deadzone(0,0.3)
 
@@ -6,6 +7,15 @@ soundpick = choose(sfx_run1,sfx_run2)
 runtimer = 0
 checkpointx = xstart
 checkpointy = ystart
+arrowoff = -15
+arrowalph = 0
+time = 0
+arrowbob = 0
+arrowframetime = 0
+arrowframe = 0
+yoff = 0
+yoffspeed = 0
+levelcomplete = false
 
 #macro CONT_A gp_face1
 #macro CONT_RB gp_shoulderrb

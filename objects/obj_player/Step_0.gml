@@ -16,7 +16,7 @@ if controllable
 	{
 		hsp = approach(hsp,0,0.5)
 		vsp = approach(vsp,0,0.5)
-		yoffspeed += 0.175 // too lazy to cap the speed
+		yoffspeed += 0.175 // too lazy to cap the speed :p
 		yoff -= yoffspeed
 	}
 	else
@@ -47,6 +47,21 @@ if controllable
 			play_sfx(choose(sfx_hitwall1,sfx_hitwall2,sfx_hitwall3),false)
 			x -= hsp
 			hsp *= -0.75
+		}
+		
+		if can_egg
+		{
+			if gamepad_button_check_pressed(0,CONT_X) && instance_number(obj_eggprojectile) < 5
+			{
+				var dir = 1
+				if axdir < 0
+					dir = -1
+				if axdir = 0
+					dir = facing
+					
+				with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
+					hspeed = (15 * dir)
+			}
 		}
 	}
 }
@@ -94,3 +109,6 @@ if arrowframetime >= 30 //2 fps
 		arrowframe = 0
 }
 #endregion
+
+if keyboard_check_pressed(vk_f1)
+	instance_create_depth(x,y,0,obj_surfacetransition)

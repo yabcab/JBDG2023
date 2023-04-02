@@ -16,8 +16,10 @@ arrowframe = 0
 yoff = 0
 yoffspeed = 0
 levelcomplete = false
+facing = 1
 
 #macro CONT_A gp_face1
+#macro CONT_X gp_face3
 #macro CONT_RB gp_shoulderrb
 #macro CONT_RT gp_shoulderr
 #macro CONT_LB gp_shoulderlb

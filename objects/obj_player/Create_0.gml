@@ -32,3 +32,4 @@ facing = 1
 #macro KEY_R keyboard_check(vk_right)
 #macro KEY_JMP keyboard_check(ord("Z"))
 #macro KEY_JMP_P keyboard_check_pressed(ord("Z"))
+#macro KEY_EGG_P keyboard_check_pressed(ord("X"))

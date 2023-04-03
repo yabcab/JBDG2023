@@ -9,6 +9,6 @@ globalvar fnt_game; fnt_game = fnt_game_boil1
 globalvar global_transition_surface; global_transition_surface = 0
 draw_set_font(fnt_game)
 
-globalvar can_egg; can_egg = true
+globalvar can_egg; can_egg = false
 
 room_goto(rm_intro)

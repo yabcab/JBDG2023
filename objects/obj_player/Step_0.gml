@@ -51,7 +51,7 @@ if controllable
 		
 		if can_egg
 		{
-			if gamepad_button_check_pressed(0,CONT_X) && instance_number(obj_eggprojectile) < 5
+			if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
 			{
 				var dir = 1
 				if axdir < 0

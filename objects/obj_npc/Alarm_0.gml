@@ -21,4 +21,11 @@ switch npcid
 		idlespr = spr_father_idle
 	}
 	break;
+	case npcs.updog:
+	{
+		drawnbg = spr_textbg_updog
+		talkspr = spr_updog_talk
+		idlespr = spr_updog_idle
+	}
+	break;
 }

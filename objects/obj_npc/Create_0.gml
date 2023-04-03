@@ -34,6 +34,7 @@ enum npcs
 	lemonhead,
 	badfather,
 	sadguy,
+	updog,
 }
 alarm[0] = 1
 talkspr = sprite_index

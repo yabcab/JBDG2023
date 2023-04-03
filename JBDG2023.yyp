@@ -24,6 +24,7 @@
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":12,},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},"order":0,},
     {"id":{"name":"spr_checkpoint","path":"sprites/spr_checkpoint/spr_checkpoint.yy",},"order":8,},
+    {"id":{"name":"spr_updog_talk","path":"sprites/spr_updog_talk/spr_updog_talk.yy",},"order":8,},
     {"id":{"name":"bg_rain3","path":"sprites/bg_rain3/bg_rain3.yy",},"order":2,},
     {"id":{"name":"scr_initvar","path":"scripts/scr_initvar/scr_initvar.yy",},"order":1,},
     {"id":{"name":"obj_fontflicker","path":"objects/obj_fontflicker/obj_fontflicker.yy",},"order":3,},
@@ -56,6 +57,7 @@
     {"id":{"name":"spr_father_idle","path":"sprites/spr_father_idle/spr_father_idle.yy",},"order":5,},
     {"id":{"name":"bg_rain4","path":"sprites/bg_rain4/bg_rain4.yy",},"order":3,},
     {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},"order":4,},
+    {"id":{"name":"spr_updog_idle","path":"sprites/spr_updog_idle/spr_updog_idle.yy",},"order":7,},
     {"id":{"name":"spr_sadguy_idle","path":"sprites/spr_sadguy_idle/spr_sadguy_idle.yy",},"order":3,},
     {"id":{"name":"rm_intro2","path":"rooms/rm_intro2/rm_intro2.yy",},"order":1,},
     {"id":{"name":"bg_rain6","path":"sprites/bg_rain6/bg_rain6.yy",},"order":5,},
@@ -85,6 +87,7 @@
     {"id":{"name":"spr_npcplaceholder","path":"sprites/spr_npcplaceholder/spr_npcplaceholder.yy",},"order":0,},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"order":5,},
     {"id":{"name":"spr_platform","path":"sprites/spr_platform/spr_platform.yy",},"order":3,},
+    {"id":{"name":"spr_textbg_updog","path":"sprites/spr_textbg_updog/spr_textbg_updog.yy",},"order":4,},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},"order":1,},
   ],
   "Options": [

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "egg",
-    "path": "folders/Sprites/misc/egg.yy",
+    "path": "folders/Sprites/ITS A SECRET/egg.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_firedegg",

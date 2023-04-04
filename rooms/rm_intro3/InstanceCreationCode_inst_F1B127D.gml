@@ -1,5 +1,5 @@
 max_texts = 2
-text[0] = "What is going on here? Do you think this is a game?"
-text[1] = "I've taken 3 years to get to the height of self.y:" + string(y) + ".. And you come here in A Grand Total of Time?"
-text[2] = "You are the scum of this earth. Go back down to my brother, inst_1AA3833, where you belong."
-npcid = npcs.updog
+text[0] = "I am so very sad due to my brother's actions."
+text[1] = "His name is inst_F1B127D, and he always treats y coordinates like they are a game. D:"
+text[2] = "I am always higher in the room (I am at self.y: " + string(y) + ") and he is always lower and that make me sad!!"
+npcid = npcs.sadguy

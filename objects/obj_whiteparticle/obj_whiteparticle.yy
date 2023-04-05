@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_eggcollect",
-    "path": "sprites/spr_eggcollect/spr_eggcollect.yy",
+    "name": "spr_whiteparticle",
+    "path": "sprites/spr_whiteparticle/spr_whiteparticle.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,19 +24,15 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ITS A SECRET",
-    "path": "folders/Objects/ITS A SECRET.yy",
+    "name": "particle",
+    "path": "folders/Objects/particle.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_eggtreasure",
+  "name": "obj_whiteparticle",
   "tags": [],
   "resourceType": "GMObject",
 }

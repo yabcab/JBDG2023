@@ -1,4 +1,4 @@
-Weather thingy - npc ???
+Weather thingy - npc lemonhead
 -(it is currently completely clear skies)
 -"Hey it's raining out."
 -(weather becomes stormy for the rest of the room with no transition)
@@ -11,7 +11,7 @@ Disappearing trick - npc lemonhead
 -(music pauses for the rest of the room and npc slowly fades away)
 -end
 
-Dunk meat baby - npc ???
+Dunk meat baby - npc updog
 -"Can you watch my son for a little bit?"
 -(spawn eldrich abomination ball that follows player)
 -"I need to go to 5 Below and steal green headbands for st. Patrick's Day."
@@ -22,7 +22,7 @@ Dunk meat baby - npc ???
 -(text appears on the bottom of the screen that says "DUNK THE BABY")
 -(player must find hoop in the room and dunk the baby to earn an achievement)
 
-Hear my cat meow - as ???
+Hear my cat meow - as reduy
 -(there is a low quality png of bingle next to the npc)
 -"my little pet is glorious. hear him do his glory scream."
 -"SOUND OFF MY LITTLE CRITTER"

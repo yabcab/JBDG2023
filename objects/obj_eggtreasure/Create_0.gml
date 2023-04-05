@@ -4,3 +4,5 @@ aft1sin = 0
 aft1cos = 0
 aft2sin = 0
 aft2cos = 0
+
+targetroom = room

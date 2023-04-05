@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_nextlevel",
-    "path": "sprites/spr_nextlevel/spr_nextlevel.yy",
+    "name": "spr_flagpole",
+    "path": "sprites/spr_flagpole/spr_flagpole.yy",
   },
   "solid": false,
   "visible": true,

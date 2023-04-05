@@ -109,6 +109,3 @@ if arrowframetime >= 30 //2 fps
 		arrowframe = 0
 }
 #endregion
-
-if keyboard_check_pressed(vk_f1)
-	instance_create_depth(x,y,0,obj_surfacetransition)

@@ -1,0 +1,1 @@
+text = "Lefty righty inny outy uppy downy"

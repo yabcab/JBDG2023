@@ -1,1 +1,1 @@
-draw_text(25,500 + yoff,text)
+draw_text(5,500 + yoff,text)

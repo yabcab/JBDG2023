@@ -63,6 +63,7 @@
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":0,},
     {"id":{"name":"spr_father_idle","path":"sprites/spr_father_idle/spr_father_idle.yy",},"order":5,},
     {"id":{"name":"bg_rain4","path":"sprites/bg_rain4/bg_rain4.yy",},"order":3,},
+    {"id":{"name":"rm_egg1","path":"rooms/rm_egg1/rm_egg1.yy",},"order":4,},
     {"id":{"name":"obj_parallax","path":"objects/obj_parallax/obj_parallax.yy",},"order":4,},
     {"id":{"name":"spr_updog_idle","path":"sprites/spr_updog_idle/spr_updog_idle.yy",},"order":7,},
     {"id":{"name":"spr_sadguy_idle","path":"sprites/spr_sadguy_idle/spr_sadguy_idle.yy",},"order":3,},
@@ -123,6 +124,7 @@
     {"roomId":{"name":"rm_intro2","path":"rooms/rm_intro2/rm_intro2.yy",},},
     {"roomId":{"name":"rm_intro3","path":"rooms/rm_intro3/rm_intro3.yy",},},
     {"roomId":{"name":"rm_intro4","path":"rooms/rm_intro4/rm_intro4.yy",},},
+    {"roomId":{"name":"rm_egg1","path":"rooms/rm_egg1/rm_egg1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

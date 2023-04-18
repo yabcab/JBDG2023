@@ -1,0 +1,1 @@
+text = "A few people do not care for your eggs"

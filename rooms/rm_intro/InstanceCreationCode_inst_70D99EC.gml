@@ -1,1 +1,1 @@
-txt = "Press A to jump"
+txt = "Press Ⓐ to jump"

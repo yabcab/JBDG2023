@@ -1,5 +1,8 @@
 with other
 {
-	x = checkpointx
-	y = checkpointy
+	if !levelcomplete
+	{
+		x = checkpointx
+		y = checkpointy
+	}
 }

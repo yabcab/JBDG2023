@@ -60,7 +60,7 @@ if controllable
 					dir = facing
 					
 				with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
-					hspeed = (15 * dir)
+					hspeed = (20 * dir)
 			}
 		}
 	}

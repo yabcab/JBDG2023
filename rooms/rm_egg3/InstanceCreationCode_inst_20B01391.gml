@@ -1,0 +1,1 @@
+txt = "Angry people do not die when pelted with eggs"

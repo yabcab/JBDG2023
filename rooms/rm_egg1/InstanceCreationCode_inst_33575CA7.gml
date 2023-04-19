@@ -1,1 +1,1 @@
-txt = "Use the eggs to kill those guys. (Jumping on them will not kill them).
+txt = "Use the eggs to kill those guys.\n(Jumping on them will not kill them)"

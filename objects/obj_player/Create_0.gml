@@ -17,6 +17,17 @@ yoff = 0
 yoffspeed = 0
 levelcomplete = false
 facing = 1
+broimdead = false
+deadtimer = 0
+hasdoublejump = true
+
+enum states
+{
+	normal,
+	rocket,
+	
+}
+state = states.normal
 
 #macro CONT_A gp_face1
 #macro CONT_X gp_face3
@@ -30,6 +41,8 @@ facing = 1
 //bitch
 #macro KEY_L keyboard_check(vk_left)
 #macro KEY_R keyboard_check(vk_right)
+#macro KEY_U keyboard_check(vk_up)
+#macro KEY_D keyboard_check(vk_down)
 #macro KEY_JMP keyboard_check(ord("Z"))
 #macro KEY_JMP_P keyboard_check_pressed(ord("Z"))
 #macro KEY_EGG_P keyboard_check_pressed(ord("X"))

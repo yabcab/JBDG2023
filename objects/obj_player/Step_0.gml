@@ -1,92 +1,148 @@
 time++
-vsp = approach(vsp,18,0.5)
+if grounded
+	hasdoublejump = true
 
-if controllable
+switch state
 {
-	var axdir = gamepad_axis_value(0,gp_axislh)
-	if KEY_L
-		axdir = -1
-	if KEY_R
-		axdir = 1
-	var holdrun = 0 //gamepad_button_check(0,CONT_RB)
-	var runsp = 3
-	var walksp = 12
-	
-	if levelcomplete
+	case states.normal:
 	{
-		hsp = approach(hsp,0,0.5)
-		vsp = approach(vsp,0,0.5)
-		yoffspeed += 0.175 // too lazy to cap the speed :p
-		yoff -= yoffspeed
-	}
-	else
-	{
-		if axdir != 0
-			facing = sign(axdir)
-		if axdir < 0
-			hsp = approach(hsp,-walksp - (holdrun * runsp),0.25)
-		else if axdir > 0
-			hsp = approach(hsp,walksp + (holdrun * runsp),0.25)
-		else
-			hsp = approach(hsp,0,0.5)
-	
-		if (grounded || place_meeting(x,y,obj_airjump) || place_meeting(x,y + 20,obj_solid)) && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
-		{
-			play_sfx(sfx_jump)
-			vsp = -15
-			jumping = true
-		}
-		if jumping && vsp < -3 && (!gamepad_button_check(0,CONT_A) && !KEY_JMP)
-		{
-			vsp = -3
-			jumping = false
-		}
-	
-		if place_meeting(x + hsp,y,obj_solid) && abs(hsp) > 4
-		{
-			play_sfx(choose(sfx_hitwall1,sfx_hitwall2,sfx_hitwall3),false)
-			x -= hsp
-			hsp *= -0.75
-		}
+		if !broimdead
+			vsp = approach(vsp,18,0.5)
 		
-		if can_egg
+		if controllable && !broimdead
 		{
-			if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
+			var axdir = gamepad_axis_value(0,gp_axislh)
+			if KEY_L
+				axdir = -1
+			if KEY_R
+				axdir = 1
+			var holdrun = 0 //gamepad_button_check(0,CONT_RB)
+			var runsp = 3
+			var walksp = 12
+	
+			if levelcomplete
 			{
-				var dir = 1
+				hsp = approach(hsp,0,0.5)
+				vsp = approach(vsp,0,0.5)
+				yoffspeed += 0.175 // too lazy to cap the speed :p
+				yoff -= yoffspeed
+			}
+			else
+			{
+				if axdir != 0
+					facing = sign(axdir)
 				if axdir < 0
-					dir = -1
-				if axdir = 0
-					dir = facing
+					hsp = approach(hsp,-walksp - (holdrun * runsp),0.25)
+				else if axdir > 0
+					hsp = approach(hsp,walksp + (holdrun * runsp),0.25)
+				else
+					hsp = approach(hsp,0,0.5)
+	
+				if (grounded || place_meeting(x,y,obj_airjump) || place_meeting(x,y + 20,obj_solid)) && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
+				{
+					play_sfx(sfx_jump)
+					vsp = -15
+					jumping = true
+					hasdoublejump = true
+				}
+				else if hasdoublejump && doublejumping && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
+				{
+					play_sfx(sfx_jump)
+					vsp = -15
+					jumping = true
+					hasdoublejump = false
+				}
+		
+				if jumping && vsp < -3 && (!gamepad_button_check(0,CONT_A) && !KEY_JMP)
+				{
+					vsp = -3
+					jumping = false
+				}
+	
+				if place_meeting(x + hsp,y,obj_solid) && abs(hsp) > 4
+				{
+					play_sfx(choose(sfx_hitwall1,sfx_hitwall2,sfx_hitwall3),false)
+					x -= hsp
+					hsp *= -0.75
+				}
+		
+				if can_egg
+				{
+					if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
+					{
+						var dir = 1
+						if axdir < 0
+							dir = -1
+						if axdir = 0
+							dir = facing
 					
-				with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
-					hspeed = (20 * dir)
+						with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
+							hspeed = (20 * dir)
+					}
+				}
 			}
 		}
+		else if !broimdead
+			hsp = lerp(hsp,0,0.2)
+		else
+		{
+			hsp = lerp(hsp,0,0.05)
+			vsp = lerp(vsp,0,0.05)
+			deadtimer = approach(deadtimer,0,1)
+			if deadtimer <= 0
+			{
+				x = lerp(x,checkpointx,0.035)
+				y = lerp(y,checkpointy - 100,0.035)
+		
+				if distance_to_point(checkpointx,checkpointy - 100) < 5
+					broimdead = false
+			}
+		}
+		
+		if grounded && abs(hsp) > 2
+		{
+			runtimer++
+			if runtimer > 17 - abs(hsp)
+			{
+				runtimer = 0
+				if soundpick = sfx_run1
+					soundpick = sfx_run2
+				else
+					soundpick = sfx_run1
+		
+				play_sfx(soundpick,false)
+			}
+		}
+		else
+			runtimer = 99
 	}
+	break;
+	
+	case states.rocket:
+	{
+		var axisv = gamepad_axis_value(0,gp_axislv)
+		if KEY_U
+			axisv = -1
+		if KEY_D	
+			axisv = 1
+		
+		hsp = approach(hsp,11 * facing,0.6)
+		vsp = approach(vsp,axisv * 5,0.5)
+		
+		if place_meeting(x + hsp,y,obj_solid)
+		{
+			x -= hsp
+			state = states.normal
+			vsp = -4
+			hsp = -20 * facing
+		}
+	}
+	break;
 }
-else
-	hsp = lerp(hsp,0,0.2)
+
 
 if abs(hsp) > 10
 	instance_create_depth(x,y,depth + 1,obj_trail)
-	
-if grounded && abs(hsp) > 2
-{
-	runtimer++
-	if runtimer > 17 - abs(hsp)
-	{
-		runtimer = 0
-		if soundpick = sfx_run1
-			soundpick = sfx_run2
-		else
-			soundpick = sfx_run1
-		
-		play_sfx(soundpick,false)
-	}
-}
-else
-	runtimer = 99
 
 #region up arrow
 if place_meeting(x,y,obj_npc) && controllable

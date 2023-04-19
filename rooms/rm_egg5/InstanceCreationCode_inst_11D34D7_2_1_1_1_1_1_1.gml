@@ -1,1 +1,1 @@
-text = "Everyone loves eggs, you are no egg"
+text = "Eggscavation"

@@ -11,4 +11,4 @@ draw_set_font(fnt_game)
 
 globalvar can_egg; can_egg = false
 
-room_goto(rm_egg5)
+room_goto(rm_intro)

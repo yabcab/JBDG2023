@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_destroyable",
-    "path": "sprites/spr_destroyable/spr_destroyable.yy",
+    "name": "spr_rocketdestroyable",
+    "path": "sprites/spr_rocketdestroyable/spr_rocketdestroyable.yy",
   },
   "solid": false,
   "visible": true,
@@ -34,7 +34,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_destroyable",
+  "name": "obj_rocketdestroyable",
   "tags": [],
   "resourceType": "GMObject",
 }

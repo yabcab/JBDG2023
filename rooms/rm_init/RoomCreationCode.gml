@@ -10,6 +10,6 @@ globalvar global_transition_surface; global_transition_surface = 0
 draw_set_font(fnt_game)
 
 globalvar can_egg; can_egg = false
-globalvar doublejumping; doublejumping = false
+globalvar can_doublejump; can_doublejump = false
 
-room_goto(rm_intro)
+room_goto(rm_sugar1)

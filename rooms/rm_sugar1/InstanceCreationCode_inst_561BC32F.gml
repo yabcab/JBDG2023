@@ -1,0 +1,1 @@
+txt = "Sugar lets you double jump!\n(if you dont know how just press Ⓐ again\nwhile already in the air, doofus)"

@@ -22,11 +22,17 @@ Dunk meat baby - npc updog
 -(text appears on the bottom of the screen that says "DUNK THE BABY")
 -(player must find hoop in the room and dunk the baby to earn an achievement)
 
-Hear my cat meow - as reduy
+Hear my cat meow - as redguy
 -(there is a low quality png of bingle next to the npc)
--"my little pet is glorious. hear him do his glory scream."
+-"my little pet is glorious. hear him do his victory screech."
 -"SOUND OFF MY LITTLE CRITTER"
 -(music pauses, spotlight on cat, wait 2 seconds)
 -sfx_mao
 -(wait 2 seconds, music unpauses, spotlight goes away)
 -end
+
+Injury - as injured man
+-"I was kicked so so many times it all hurts it hurts"
+-"Please spare me please please i am on my last legs"
+-(He dies on the spot)
+-(He fades away and tombstone rises)

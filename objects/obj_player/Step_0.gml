@@ -1,3 +1,6 @@
+var axdir = gamepad_axis_value(0,gp_axislh)
+var axisv = gamepad_axis_value(0,gp_axislv)
+
 time++
 if grounded
 	hasdoublejump = true
@@ -11,7 +14,6 @@ switch state
 		
 		if controllable && !broimdead
 		{
-			var axdir = gamepad_axis_value(0,gp_axislh)
 			if KEY_L
 				axdir = -1
 			if KEY_R
@@ -45,7 +47,7 @@ switch state
 					jumping = true
 					hasdoublejump = true
 				}
-				else if hasdoublejump && doublejumping && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
+				else if hasdoublejump && can_doublejump && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
 				{
 					play_sfx(sfx_jump)
 					vsp = -15
@@ -120,7 +122,6 @@ switch state
 	
 	case states.rocket:
 	{
-		var axisv = gamepad_axis_value(0,gp_axislv)
 		if KEY_U
 			axisv = -1
 		if KEY_D	
@@ -136,6 +137,32 @@ switch state
 			vsp = -4
 			hsp = -20 * facing
 		}
+		
+		//possibly unused thing
+		//if gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P
+		//{
+		//	state = states.normal
+		//	play_sfx(sfx_jump)
+		//	vsp = -15
+		//	jumping = true
+		//	hasdoublejump = true
+		//}
+		
+		if can_egg
+		{
+			if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
+			{
+				var dir = 1
+				if axdir < 0
+					dir = -1
+				if axdir = 0
+					dir = facing
+					
+				with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
+					hspeed = (20 * dir)
+			}
+		}
+		hasdoublejump = true
 	}
 	break;
 }

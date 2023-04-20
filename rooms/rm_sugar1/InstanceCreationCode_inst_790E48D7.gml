@@ -1,0 +1,1 @@
+txt = "Rockets let you break through hard\nwalls and kill enemies on contact."

@@ -21,6 +21,7 @@ broimdead = false
 deadtimer = 0
 hasdoublejump = true
 
+// 4/20/23 - i predict there will be like 4 states in total
 enum states
 {
 	normal,

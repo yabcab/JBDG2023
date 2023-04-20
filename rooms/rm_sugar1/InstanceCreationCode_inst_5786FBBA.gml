@@ -1,0 +1,1 @@
+txt = "Use the left stick to steer up and down\n(With the rocket)"

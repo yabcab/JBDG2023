@@ -61,6 +61,7 @@
     {"id":{"name":"obj_enemysolid","path":"objects/obj_enemysolid/obj_enemysolid.yy",},"order":9,},
     {"id":{"name":"sfx_rainloop1","path":"sounds/sfx_rainloop1/sfx_rainloop1.yy",},"order":7,},
     {"id":{"name":"sfx_run1","path":"sounds/sfx_run1/sfx_run1.yy",},"order":5,},
+    {"id":{"name":"mu_sugar","path":"sounds/mu_sugar/mu_sugar.yy",},"order":3,},
     {"id":{"name":"obj_destroyable","path":"objects/obj_destroyable/obj_destroyable.yy",},"order":4,},
     {"id":{"name":"obj_whiteparticle","path":"objects/obj_whiteparticle/obj_whiteparticle.yy",},"order":2,},
     {"id":{"name":"spr_playerplaceholder","path":"sprites/spr_playerplaceholder/spr_playerplaceholder.yy",},"order":4,},

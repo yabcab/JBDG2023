@@ -1,17 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_crates",
-    "path": "sprites/spr_crates/spr_crates.yy",
+    "name": "spr_cratedebris",
+    "path": "sprites/spr_cratedebris/spr_cratedebris.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_solid",
-    "path": "objects/obj_solid/obj_solid.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -25,17 +22,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "particle",
+    "path": "folders/Objects/particle.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_destroyable",
+  "name": "obj_cratepart",
   "tags": [],
   "resourceType": "GMObject",
 }

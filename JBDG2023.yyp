@@ -80,6 +80,7 @@
     {"id":{"name":"spr_sadguy_idle","path":"sprites/spr_sadguy_idle/spr_sadguy_idle.yy",},"order":3,},
     {"id":{"name":"rm_intro2","path":"rooms/rm_intro2/rm_intro2.yy",},"order":1,},
     {"id":{"name":"bg_rain6","path":"sprites/bg_rain6/bg_rain6.yy",},"order":5,},
+    {"id":{"name":"obj_cratepart","path":"objects/obj_cratepart/obj_cratepart.yy",},"order":3,},
     {"id":{"name":"npc ideas","path":"notes/npc ideas/npc ideas.yy",},"order":1,},
     {"id":{"name":"spr_crates","path":"sprites/spr_crates/spr_crates.yy",},"order":0,},
     {"id":{"name":"scr_text","path":"scripts/scr_text/scr_text.yy",},"order":3,},

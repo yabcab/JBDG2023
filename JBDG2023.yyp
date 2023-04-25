@@ -5,6 +5,7 @@
     {"id":{"name":"rm_sugar4","path":"rooms/rm_sugar4/rm_sugar4.yy",},"order":12,},
     {"id":{"name":"rm_intro4","path":"rooms/rm_intro4/rm_intro4.yy",},"order":3,},
     {"id":{"name":"achievement ideas","path":"notes/achievement ideas/achievement ideas.yy",},"order":2,},
+    {"id":{"name":"spr_enemy_dead","path":"sprites/spr_enemy_dead/spr_enemy_dead.yy",},"order":1,},
     {"id":{"name":"obj_roomname","path":"objects/obj_roomname/obj_roomname.yy",},"order":2,},
     {"id":{"name":"spr_smoke","path":"sprites/spr_smoke/spr_smoke.yy",},"order":5,},
     {"id":{"name":"spr_enemyplaceholder","path":"sprites/spr_enemyplaceholder/spr_enemyplaceholder.yy",},"order":11,},
@@ -80,6 +81,7 @@
     {"id":{"name":"spr_sadguy_idle","path":"sprites/spr_sadguy_idle/spr_sadguy_idle.yy",},"order":3,},
     {"id":{"name":"rm_intro2","path":"rooms/rm_intro2/rm_intro2.yy",},"order":1,},
     {"id":{"name":"bg_rain6","path":"sprites/bg_rain6/bg_rain6.yy",},"order":5,},
+    {"id":{"name":"spr_enemy_walk","path":"sprites/spr_enemy_walk/spr_enemy_walk.yy",},"order":0,},
     {"id":{"name":"obj_cratepart","path":"objects/obj_cratepart/obj_cratepart.yy",},"order":3,},
     {"id":{"name":"npc ideas","path":"notes/npc ideas/npc ideas.yy",},"order":1,},
     {"id":{"name":"spr_crates","path":"sprites/spr_crates/spr_crates.yy",},"order":0,},
@@ -184,6 +186,7 @@
     {"folderPath":"folders/Sprites/misc/particle.yy","order":2,"resourceVersion":"1.0","name":"particle","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/particle.yy","order":2,"resourceVersion":"1.0","name":"particle","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/misc/crate.yy","order":3,"resourceVersion":"1.0","name":"crate","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/enemy.yy","order":11,"resourceVersion":"1.0","name":"enemy","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

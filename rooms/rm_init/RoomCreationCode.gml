@@ -12,7 +12,7 @@ draw_set_font(fnt_game)
 globalvar can_egg; can_egg = false
 globalvar can_doublejump; can_doublejump = false
 
-room_goto(rm_sugar1)
+room_goto(rm_egg1)
 
 if os_type = os_windows
 	window_set_size(1920,1080)

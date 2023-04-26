@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_enemyplaceholdernodie",
-    "path": "sprites/spr_enemyplaceholdernodie/spr_enemyplaceholdernodie.yy",
+    "name": "spr_enemyangry_walk",
+    "path": "sprites/spr_enemyangry_walk/spr_enemyangry_walk.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,6 +24,8 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

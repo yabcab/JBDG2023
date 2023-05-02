@@ -9,6 +9,9 @@ switch state
 {
 	case states.normal:
 	{
+		if abs(hsp) > 10
+			instance_create_depth(x,y,depth + 1,obj_trail)
+		
 		if !broimdead
 			vsp = approach(vsp,18,0.5)
 		
@@ -122,6 +125,9 @@ switch state
 	
 	case states.rocket:
 	{
+		if abs(hsp) > 10
+			instance_create_depth(x,y,depth + 1,obj_trail)
+		
 		if KEY_U
 			axisv = -1
 		if KEY_D	
@@ -168,6 +174,9 @@ switch state
 	
 	case states.golf:
 	{
+		if abs(hsp) > 10 || abs(vsp) > 10
+			instance_create_depth(x,y,depth + 1,obj_trail)
+		
 		if cangolf
 		{
 			if mouse_check_button_pressed(mb_left)
@@ -181,9 +190,12 @@ switch state
 				vsp = v
 				cangolf = false
 			}
+			
+			drawray = true
 		}
 		else
 		{
+			drawray = false
 			if abs(vsp) < 0.5 && abs(hsp) < 0.5
 			{
 				cangolf = true
@@ -213,10 +225,6 @@ switch state
 		}
 	}
 }
-
-
-if abs(hsp) > 10
-	instance_create_depth(x,y,depth + 1,obj_trail)
 
 #region up arrow
 if place_meeting(x,y,obj_npc) && controllable

@@ -1,6 +1,6 @@
 with other
 {
-	if !levelcomplete
+	if !levelcomplete && !broimdead
 	{
 		//x = checkpointx
 		//y = checkpointy

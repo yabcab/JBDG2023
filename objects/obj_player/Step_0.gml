@@ -165,6 +165,53 @@ switch state
 		hasdoublejump = true
 	}
 	break;
+	
+	case states.golf:
+	{
+		if cangolf
+		{
+			if mouse_check_button_pressed(mb_left)
+			{
+				var sp = 30
+				var dir = point_direction(x,y,mouse_x,mouse_y)
+				var h = lengthdir_x(sp,dir)
+				var v = lengthdir_y(sp,dir)
+				
+				hsp = h
+				vsp = v
+				cangolf = false
+			}
+		}
+		else
+		{
+			if abs(vsp) < 0.5 && abs(hsp) < 0.5
+			{
+				cangolf = true
+				hsp = 0
+				vsp = 0
+			}
+		}
+		
+		if !broimdead
+			vsp = approach(vsp,18,0.5)
+		
+		if place_meeting(x,y + vsp,obj_solid) && (abs(vsp) > 7 || (abs(hsp) > 8 && abs(vsp) > 3))
+		{
+			y -= vsp
+			vsp *= -0.6
+			hsp /= 1.05
+		}
+		if place_meeting(x + hsp,y,obj_solid) && abs(hsp) > 3
+		{
+			x -= hsp
+			hsp *= -0.6
+		}
+		
+		if grounded
+		{
+			hsp = approach(hsp,0,0.15)
+		}
+	}
 }
 
 

@@ -1,12 +1,14 @@
 if drawray
 {
 	//init ray
-	var x_new, y_new, x_old, y_old, x_vel, y_vel, init_spd, previously_walled, pset
+	var x_new, y_new, x_old, y_old, x_vel, y_vel, init_spd, previously_walled, pset, max_steps, steps
 	init_spd = 20
+	steps = 0
 	x_vel = 0
 	y_vel = 0
 	previously_walled = false
 	pset = false
+	max_steps = 20
 	
 	//grab coords
 	x_old = x
@@ -19,8 +21,11 @@ if drawray
 	x_vel = lengthdir_x(init_spd,dir)
 	y_vel = lengthdir_y(init_spd,dir)
 	
-	while !previously_walled
+	while !previously_walled && steps < max_steps
 	{
+		//up the steps
+		steps++
+		
 		//move new coords
 		x_new = x_old + x_vel
 		y_new = y_old + y_vel

@@ -1,3 +1,4 @@
+play_sfx(sfx_egghit)
 instance_destroy(other)
 instance_destroy()
 with instance_create_depth(other.x,other.y,-1,obj_eggparticle)

@@ -75,6 +75,8 @@ switch state
 				{
 					if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
 					{
+						play_sfx(sfx_eggtoss)
+						
 						var dir = 1
 						if axdir < 0
 							dir = -1
@@ -158,6 +160,8 @@ switch state
 		{
 			if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
 			{
+				play_sfx(sfx_eggtoss)
+				
 				var dir = 1
 				if axdir < 0
 					dir = -1
@@ -174,8 +178,15 @@ switch state
 	
 	case states.golf:
 	{
+		rot -= hsp
+		if rot > 360
+			rot -= 360
+		if rot < -360
+			rot += 360
+			
 		if abs(hsp) > 10 || abs(vsp) > 10
-			instance_create_depth(x,y,depth + 1,obj_trail)
+			with instance_create_depth(x,y,depth + 1,obj_trail)
+				image_angle = other.rot
 		
 		if cangolf
 		{

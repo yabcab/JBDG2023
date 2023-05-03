@@ -22,10 +22,12 @@ deadtimer = 0
 hasdoublejump = true
 cangolf = true
 drawray = false
+rot = 0
 
 // 4/20/23 - i predict there will be like 4 states in total
 enum states
 {
+	none = -1,
 	normal,
 	rocket,
 	golf,

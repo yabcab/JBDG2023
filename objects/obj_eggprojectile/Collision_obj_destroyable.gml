@@ -11,3 +11,4 @@ with other
 
 instance_destroy(other)
 instance_destroy()
+play_sfx(sfx_cratehit)

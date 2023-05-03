@@ -2,6 +2,7 @@ if state = states.normal
 {
 	y -= 5
 	instance_destroy(other)
+	play_sfx(sfx_owie)
 	with instance_create_depth(other.x,other.y,-1,obj_eggparticle)
 	{
 		sprite_index = spr_enemy_dead
@@ -18,6 +19,7 @@ if state = states.normal
 else if state = states.rocket
 {
 	instance_destroy(other)
+	play_sfx(sfx_egghit)
 	with instance_create_depth(other.x,other.y,-1,obj_eggparticle)
 	{
 		sprite_index = spr_enemy_dead

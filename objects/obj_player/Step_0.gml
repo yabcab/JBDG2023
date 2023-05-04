@@ -144,6 +144,7 @@ switch state
 			state = states.normal
 			vsp = -4
 			hsp = -20 * facing
+			play_sfx(sfx_explode)
 		}
 		
 		//possibly unused thing

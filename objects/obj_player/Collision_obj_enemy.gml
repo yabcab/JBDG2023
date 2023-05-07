@@ -1,6 +1,7 @@
 if state = states.normal
 {
-	y -= 5
+	anim_hurt = true
+	y -= 11
 	instance_destroy(other)
 	play_sfx(sfx_owie)
 	with instance_create_depth(other.x,other.y,-1,obj_eggparticle)

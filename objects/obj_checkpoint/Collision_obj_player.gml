@@ -1,5 +1,5 @@
 with other
 {
-	checkpointx = x
-	checkpointy = y
+	checkpointx = other.x
+	checkpointy = other.y
 }

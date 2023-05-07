@@ -24,6 +24,9 @@ cangolf = true
 drawray = false
 rot = 0
 
+anim_jump = false
+anim_hurt = false
+
 // 4/20/23 - i predict there will be like 4 states in total
 enum states
 {

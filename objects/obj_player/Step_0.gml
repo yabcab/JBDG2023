@@ -3,12 +3,36 @@ var axisv = gamepad_axis_value(0,gp_axislv)
 
 time++
 if grounded
+{
 	hasdoublejump = true
+	anim_hurt = false	
+}
 
 switch state
 {
 	case states.normal:
 	{
+		image_speed = 1
+		if grounded
+		{
+			if abs(axdir) > 0 || KEY_L || KEY_R
+			{
+				sprite_index = spr_playerJ_move
+				image_speed = abs(hsp) / 3
+			}
+			else
+				sprite_index = spr_playerJ_idle
+		}
+		else
+		{
+			if anim_hurt
+				sprite_index = spr_playerJ_pain
+			else if anim_jump
+				sprite_index = spr_playerJ_jump
+			else
+				sprite_index = spr_playerJ_air
+		}
+		
 		if abs(hsp) > 10
 			instance_create_depth(x,y,depth + 1,obj_trail)
 		
@@ -49,6 +73,8 @@ switch state
 					vsp = -15
 					jumping = true
 					hasdoublejump = true
+					anim_jump = true
+					image_index = 0
 				}
 				else if hasdoublejump && can_doublejump && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
 				{
@@ -56,6 +82,8 @@ switch state
 					vsp = -15
 					jumping = true
 					hasdoublejump = false
+					anim_jump = true
+					image_index = 0
 				}
 		
 				if jumping && vsp < -3 && (!gamepad_button_check(0,CONT_A) && !KEY_JMP)
@@ -69,6 +97,10 @@ switch state
 					play_sfx(choose(sfx_hitwall1,sfx_hitwall2,sfx_hitwall3),false)
 					x -= hsp
 					hsp *= -0.75
+					if grounded
+						vsp = -3
+					y -= 11
+					anim_hurt = true
 				}
 		
 				if can_egg
@@ -91,17 +123,21 @@ switch state
 		}
 		else if !broimdead
 			hsp = lerp(hsp,0,0.2)
-		else
+			
+		if broimdead
 		{
+			sprite_index = spr_playerJ_pain
 			hsp = lerp(hsp,0,0.05)
 			vsp = lerp(vsp,0,0.05)
 			deadtimer = approach(deadtimer,0,1)
 			if deadtimer <= 0
 			{
+				hsp = 0
+				vsp = 0
 				x = lerp(x,checkpointx,0.035)
-				y = lerp(y,checkpointy - 100,0.035)
+				y = lerp(y,checkpointy - 100,0.035) 
 		
-				if distance_to_point(checkpointx,checkpointy - 100) < 5
+				if distance_to_point(checkpointx,checkpointy - 100) < 10
 					broimdead = false
 			}
 		}

@@ -1,6 +1,7 @@
 if state = states.normal
 {
-	y -= 5
+	anim_hurt = true
+	y -= 11
 	play_sfx(sfx_redhit)
 	//instance_destroy(other)
 	other.hitting = true

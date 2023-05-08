@@ -9,5 +9,6 @@ with other
 		vsp = -7
 		broimdead = true
 		deadtimer = 60
+		instance_create_depth(x,y,-100,obj_rescuebubble)
 	}
 }

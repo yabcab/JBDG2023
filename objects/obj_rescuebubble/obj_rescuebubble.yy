@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_airjump",
-    "path": "sprites/spr_airjump/spr_airjump.yy",
+    "name": "spr_rescuebubble",
+    "path": "sprites/spr_rescuebubble/spr_rescuebubble.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,17 +23,16 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "engine",
+    "path": "folders/Objects/engine.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_airjump",
+  "name": "obj_rescuebubble",
   "tags": [],
   "resourceType": "GMObject",
 }

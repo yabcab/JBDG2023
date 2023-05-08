@@ -75,6 +75,24 @@ switch state
 					hasdoublejump = true
 					anim_jump = true
 					image_index = 0
+					
+					if place_meeting(x,y,obj_airjump)
+					{
+						with instance_nearest(x,y,obj_airjump)
+						{
+							image_xscale = 1.6
+							image_yscale = 1.6
+							repeat 15
+								with instance_create_depth(x,y,depth - 1,obj_whiteparticle)
+								{
+									image_angle = point_direction(0,0,hspeed,vspeed)
+									sprite_index = spr_bubbleline
+									alphlower = random_range(0.07,0.09)
+									starth = abs(hspeed / 50)
+									startv = abs(vspeed / 50)
+								}
+						}
+					}
 				}
 				else if hasdoublejump && can_doublejump && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
 				{

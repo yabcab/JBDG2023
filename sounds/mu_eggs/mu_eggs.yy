@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 0.3,
+  "volume": 0.2,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_eggs.mp3",
-  "duration": 178.632,
+  "duration": 189.192,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

@@ -16,3 +16,5 @@ room_goto(rm_intro)
 
 if os_type = os_windows
 	window_set_size(1920,1080)
+
+show_debug_overlay(true)

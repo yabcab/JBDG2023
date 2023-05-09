@@ -10,3 +10,9 @@ function play_sfx(sound,do_pitch = true,pitch_low = 0.8,pitch_high = 1.2)
 		audio_sound_pitch(s,random_range(pitch_low,pitch_high))
 	return s
 }
+
+function make_shadow_layer_do_shadow()
+{
+	var l = layer_get_id("Tiles_s")
+	var t = layer_tilemap_get_id(l)
+}

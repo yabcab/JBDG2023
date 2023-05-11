@@ -26,6 +26,7 @@ rot = 0
 
 anim_jump = false
 anim_hurt = false
+anim_egg = false
 
 // 4/20/23 - i predict there will be like 4 states in total
 enum states
@@ -38,20 +39,4 @@ enum states
 }
 state = states.normal
 
-#macro CONT_A gp_face1
-#macro CONT_X gp_face3
-#macro CONT_RB gp_shoulderrb
-#macro CONT_RT gp_shoulderr
-#macro CONT_LB gp_shoulderlb
-#macro CONT_LT gp_shoulderl
-
-//NOTE - keyboard support comes SECOND. 
-//you are building Trails and Tribulations primarily to be run on XBOX UWP WITH A CONTROLLER!!
-//bitch
-#macro KEY_L keyboard_check(vk_left)
-#macro KEY_R keyboard_check(vk_right)
-#macro KEY_U keyboard_check(vk_up)
-#macro KEY_D keyboard_check(vk_down)
-#macro KEY_JMP keyboard_check(ord("Z"))
-#macro KEY_JMP_P keyboard_check_pressed(ord("Z"))
-#macro KEY_EGG_P keyboard_check_pressed(ord("X"))
+make_shadow()

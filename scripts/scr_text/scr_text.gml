@@ -25,6 +25,8 @@ function text_checker()
 		
 		case "@START_RAIN":
 		{
+			instance_destroy(inst_17DF170A)// this one specifically
+			
 			if !audio_is_playing(sfx_rainloop1)
 			{
 				audio_play_sound(sfx_rainloop1,1,true)

@@ -39,3 +39,5 @@ enum npcs
 alarm[0] = 1
 talkspr = sprite_index
 idlespr = sprite_index
+
+make_shadow()

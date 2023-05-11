@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_sugar.mp3",
-  "duration": 157.584,
+  "duration": 108.432,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

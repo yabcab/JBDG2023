@@ -11,8 +11,15 @@ function play_sfx(sound,do_pitch = true,pitch_low = 0.8,pitch_high = 1.2)
 	return s
 }
 
-function make_shadow_layer_do_shadow()
+function make_shadow()
 {
-	var l = layer_get_id("Tiles_s")
-	var t = layer_tilemap_get_id(l)
+	//init req'd vars
+	yoff = 0
+	rot = 0
+	facing = 1
+	bobsin = 0
+	
+	//make it
+	with instance_create_depth(0,0,101,obj_shadow)
+		assigned = other.id
 }

@@ -2,7 +2,7 @@ if !currpaused
 {
 	var window_unfocus = !window_has_focus()
 	var manual_lock = keyboard_check_pressed(ord("Q"))
-	var override = false//os_type = os_windows
+	var override = os_type = os_windows
 	
 	if (window_unfocus || manual_lock) && !override
 	{

@@ -1,4 +1,4 @@
-depth = 50
+depth = 150
 sprite_index = bg_rain1
 x_intensity = 0.5
 y_intensity = 1

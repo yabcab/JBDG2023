@@ -8,3 +8,5 @@ alphlower = random_range(0.01,0.02)
 
 starth = abs(hspeed / 100)
 startv = abs(vspeed / 100)
+
+//make_shadow()

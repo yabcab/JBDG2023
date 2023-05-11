@@ -35,7 +35,7 @@
     "spriteId": {"name":"spr_playerJ_pain","path":"sprites/spr_playerJ_pain/spr_playerJ_pain.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 2.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

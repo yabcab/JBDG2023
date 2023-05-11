@@ -1,10 +1,10 @@
 {
-  "option_windowsuap_display_name": "JBDG2023",
+  "option_windowsuap_display_name": "JBDG2023 UWPTEST1",
   "option_windowsuap_package_name": "JBDG2023",
   "option_windowsuap_publisher_display_name": "JBDG2023",
   "option_windowsuap_package_display_name": "JBDG2023",
   "option_windowsuap_description": "JBDG2023",
-  "option_windowsuap_version": "1.0.0.0",
+  "option_windowsuap_version": "0.0.0.1",
   "option_windowsuap_orient_portrait": true,
   "option_windowsuap_orient_portrait_flipped": true,
   "option_windowsuap_orient_landscape": true,

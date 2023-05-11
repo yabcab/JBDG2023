@@ -6,6 +6,7 @@ if grounded
 {
 	hasdoublejump = true
 	anim_hurt = false	
+	anim_egg = false
 }
 
 switch state
@@ -29,8 +30,17 @@ switch state
 				sprite_index = spr_playerJ_pain
 			else if anim_jump
 				sprite_index = spr_playerJ_jump
+			else if anim_egg
+				sprite_index = spr_playerJ_egg
 			else
 				sprite_index = spr_playerJ_air
+		}
+		
+		//STROMBULOUS
+		if levelcomplete
+		{
+			sprite_index = spr_playerJ_air
+			instance_create_depth(x,bbox_bottom + yoff,depth - 1,obj_whiteparticle)	
 		}
 		
 		if abs(hsp) > 10
@@ -117,8 +127,10 @@ switch state
 					hsp *= -0.75
 					if grounded
 						vsp = -3
-					y -= 11
+					if !place_meeting(x,y - 11,obj_solid)
+						y -= 11
 					anim_hurt = true
+					anim_egg = false
 				}
 		
 				if can_egg
@@ -126,6 +138,8 @@ switch state
 					if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
 					{
 						play_sfx(sfx_eggtoss)
+						anim_egg = true
+						anim_hurt = false
 						
 						var dir = 1
 						if axdir < 0
@@ -135,6 +149,13 @@ switch state
 					
 						with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
 							hspeed = (20 * dir)
+							
+						if grounded
+						{
+							vsp = -5
+							if !place_meeting(x,y - 11,obj_solid)
+								y -= 11
+						}
 					}
 				}
 			}
@@ -275,7 +296,8 @@ switch state
 		
 		if place_meeting(x,y + vsp,obj_solid) && (abs(vsp) > 7 || (abs(hsp) > 8 && abs(vsp) > 3))
 		{
-			y -= vsp
+			if !place_meeting(x,y - vsp,obj_solid)
+				y -= vsp
 			vsp *= -0.6
 			hsp /= 1.05
 		}

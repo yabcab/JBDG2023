@@ -78,7 +78,7 @@ if speaking
 else
 {
 	textbox_yoff = lerp(textbox_yoff,150,0.2)
-	if place_meeting(x,y,obj_player) && (gamepad_axis_value(0,gp_axislv) < -0.2 || keyboard_check(vk_up)) && !speaking
+	if place_meeting(x,y,obj_player) && (gamepad_axis_value(0,gp_axislv) < -0.2 || keyboard_check(vk_up)) && !speaking && !fadeaway
 	{
 		speaking = true
 		speechbubble = false
@@ -106,3 +106,10 @@ if speaking
 	sprite_index = talkspr
 else
 	sprite_index = idlespr
+	
+if fadeaway
+{
+	image_alpha -= 0.01
+	if image_alpha <= 0
+		instance_destroy()
+}

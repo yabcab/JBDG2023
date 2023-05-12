@@ -29,15 +29,18 @@ xscroll = 0
 yscroll = 0
 
 npcid = npcs.lemonhead
-enum npcs
+enum npcs // 5/11/23 - all npcs are in!!
 {
 	lemonhead,
 	badfather,
 	sadguy,
 	updog,
+	redcritter
 }
 alarm[0] = 1
 talkspr = sprite_index
 idlespr = sprite_index
 
 make_shadow()
+
+fadeaway = false

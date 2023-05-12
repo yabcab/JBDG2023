@@ -335,3 +335,12 @@ if arrowframetime >= 30 //2 fps
 		arrowframe = 0
 }
 #endregion
+
+if talking // to the right of npc when talking
+{
+	var i = instance_nearest(x,y,obj_npc)
+	
+	hsp = 0
+	x = lerp(x,i.x + 50,0.1)
+	facing = -1
+}

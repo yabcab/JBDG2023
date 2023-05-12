@@ -23,6 +23,7 @@ hasdoublejump = true
 cangolf = true
 drawray = false
 rot = 0
+talking = false
 
 anim_jump = false
 anim_hurt = false

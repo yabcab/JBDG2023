@@ -19,7 +19,7 @@ function text_checker()
 		case "@TEST":
 		{
 			with instance_create_depth(x,y,0,obj_roomname)
-				text = "The test was a success!"
+				text = "GOOD BOY LITTLE SCRIPT."
 		}
 		break;
 		
@@ -43,6 +43,55 @@ function text_checker()
 			
 			with obj_parallax
 				visible = true
+		}
+		break;
+		
+		case "@SUMMON_MEATBABY":
+		{
+			var yy = obj_player.y - 300
+			var xx = obj_player.x
+			instance_create_depth(xx,yy,-1,obj_meatbaby)
+			repeat 40
+				instance_create_depth(xx,yy,-1,obj_whiteparticle)
+		}
+		break;
+		
+		case "@MOVE_UP":
+		{
+			vspeed = -3
+			alarm[1] = 300
+		}
+		break;
+		
+		case "@DUNKMEAT_TITLE":
+		{
+			glue_overlay(spr_dunkthebaby)
+		}
+		break;
+		
+		case "@EXPLODE_AND_DIE":
+		{
+			idlespr = spr_empty
+			talkspr = spr_empty
+			with instance_create_depth(x,y,depth,obj_smokepuff)
+				sprite_index = spr_explosion
+			//sound here
+			instance_create_depth(x,y,101,obj_risinggrave)
+			x = -1000
+			y = -1000
+		}
+		break;
+		
+		case "@FADE_OUT":
+		{
+			fadeaway = true	
+		}
+		break;
+		
+		case "@BINGLE_ACTIVITY":
+		{
+			with obj_bingle
+				alarm[0] = 1
 		}
 		break;
 	}

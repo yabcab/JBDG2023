@@ -1,16 +1,14 @@
-Weather thingy - npc lemonhead
--(it is currently completely clear skies)
--"Hey it's raining out."
--(weather becomes stormy for the rest of the room with no transition)
--end
+Dance dance - as redcritter
+-"dance party"
+-short dance sequence (https://www.youtube.com/watch?v=9brDE-b03i8 as music)
 
-Disappearing trick - npc lemonhead
--"hey BESTIE."
--"wanna see my COOL MAGIC TRICK..?"
--"watch me be FUCKING cool."
--(music pauses for the rest of the room and npc slowly fades away)
--end
 
+
+
+
+
+
+DONE:
 Dunk meat baby - npc updog
 -"Can you watch my son for a little bit?"
 -(spawn eldrich abomination ball that follows player)
@@ -22,6 +20,23 @@ Dunk meat baby - npc updog
 -(text appears on the bottom of the screen that says "DUNK THE BABY")
 -(player must find hoop in the room and dunk the baby to earn an achievement)
 
+Injury - as injured man
+-"I was kicked so so many times it all hurts it hurts"
+-"Please spare me please please i am on my last legs"
+-(He dies on the spot)
+-(He fades away and tombstone rises)
+
+Weather thingy - npc lemonhead
+-(it is currently completely clear skies)
+-"Hey it's raining out."
+-(weather becomes stormy for the rest of the room with no transition)
+-end
+
+Disappearing trick - npc lemonhead
+"Hey watch this"
+-(music pauses for the rest of the room and npc slowly fades away)
+-end
+
 Hear my cat meow - as redguy
 -(there is a low quality png of bingle next to the npc)
 -"my little pet is glorious. hear him do his victory screech."
@@ -30,9 +45,3 @@ Hear my cat meow - as redguy
 -sfx_mao
 -(wait 2 seconds, music unpauses, spotlight goes away)
 -end
-
-Injury - as injured man
--"I was kicked so so many times it all hurts it hurts"
--"Please spare me please please i am on my last legs"
--(He dies on the spot)
--(He fades away and tombstone rises)

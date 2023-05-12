@@ -28,4 +28,12 @@ switch npcid
 		idlespr = spr_updog_idle
 	}
 	break;
+	
+	case npcs.redcritter:
+	{
+		drawnbg = spr_textbg_redcritter
+		talkspr = spr_redcritter_talk
+		idlespr = spr_redcritter_idle
+	}
+	break;
 }

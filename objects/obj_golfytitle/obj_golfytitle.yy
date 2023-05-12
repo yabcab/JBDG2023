@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_gametitle",
-    "path": "sprites/spr_gametitle/spr_gametitle.yy",
+    "name": "spr_glue",
+    "path": "sprites/spr_glue/spr_glue.yy",
   },
   "solid": false,
   "visible": true,

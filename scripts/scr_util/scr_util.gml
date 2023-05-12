@@ -23,3 +23,9 @@ function make_shadow()
 	with instance_create_depth(0,0,101,obj_shadow)
 		assigned = other.id
 }
+
+function glue_overlay(spr)
+{
+	with instance_create_depth(0,0,0,obj_golfytitle)
+		sprite_index = spr
+}

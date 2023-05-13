@@ -8,6 +8,9 @@ if !other.levelcomplete
 	alarm[0] = 75
 	with other
 	{
+		if state = states.rocket
+			with instance_create_depth(x + (4 * facing),y - 20,-2,obj_killedrocket)
+				image_xscale = other.facing
 		levelcomplete = true
 		state = states.normal
 	}

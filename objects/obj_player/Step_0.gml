@@ -22,7 +22,10 @@ switch state
 				image_speed = abs(hsp) / 3
 			}
 			else
-				sprite_index = spr_playerJ_idle
+				if axisv > 0.1
+					sprite_index = spr_playerJ_crouch
+				else
+					sprite_index = spr_playerJ_idle
 		}
 		else
 		{
@@ -202,6 +205,10 @@ switch state
 	
 	case states.rocket:
 	{
+		image_speed = 1
+		sprite_index = spr_playerJ_rocket
+		instance_create_depth(x + (4 * facing),y - 20,-2,obj_confetti) // i hope this does not kill performance :p
+		
 		if abs(hsp) > 10
 			instance_create_depth(x,y,depth + 1,obj_trail)
 		
@@ -220,6 +227,11 @@ switch state
 			vsp = -4
 			hsp = -20 * facing
 			play_sfx(sfx_explode)
+			with instance_create_depth(x + (4 * facing),y - 20,-2,obj_killedrocket)
+				image_xscale = other.facing
+			// the xbox will NOT like this one (i dont care!)
+			repeat 150
+				instance_create_depth(random_range(x - 20,x + 20),random_range(y - 20,y + 20),-2,obj_confetti) 
 		}
 		
 		//possibly unused thing

@@ -109,6 +109,9 @@ switch state
 				}
 				else if hasdoublejump && can_doublejump && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
 				{
+					repeat 15
+						with instance_create_depth(x,y,depth,obj_whiteparticle)
+							vspeed = random_range(3,5)
 					play_sfx(sfx_jump)
 					vsp = -15
 					jumping = true

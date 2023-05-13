@@ -26,8 +26,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ITS A SECRET",
-    "path": "folders/Objects/ITS A SECRET.yy",
+    "name": "yesyes",
+    "path": "folders/Objects/ITS A SECRET/aaa/yesyes.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_dont_let_jayla_see_the_game",

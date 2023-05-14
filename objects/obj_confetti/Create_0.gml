@@ -12,4 +12,4 @@ var col3 = make_color_rgb(232,96,24)
 var col4 = make_color_rgb(160,240,128)
 image_blend = choose(col1,col2,col3,col4)
 
-make_shadow()
+//make_shadow()

@@ -1,1 +1,1 @@
-text = "Understandably large rocket jump"
+text = "Unimaginably large rocket jump"

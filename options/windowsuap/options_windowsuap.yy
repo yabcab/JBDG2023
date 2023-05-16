@@ -4,7 +4,7 @@
   "option_windowsuap_publisher_display_name": "JBDG2023",
   "option_windowsuap_package_display_name": "JBDG2023",
   "option_windowsuap_description": "JBDG2023",
-  "option_windowsuap_version": "0.0.0.4",
+  "option_windowsuap_version": "0.0.0.5",
   "option_windowsuap_orient_portrait": true,
   "option_windowsuap_orient_portrait_flipped": true,
   "option_windowsuap_orient_landscape": true,

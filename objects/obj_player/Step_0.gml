@@ -183,7 +183,10 @@ switch state
 				y = lerp(y,checkpointy - 100,0.035) 
 		
 				if distance_to_point(checkpointx,checkpointy - 100) < 10
+				{
 					broimdead = false
+					play_sfx(sfx_bubblepop)	
+				}
 			}
 		}
 		
@@ -210,7 +213,9 @@ switch state
 	{
 		image_speed = 1
 		sprite_index = spr_playerJ_rocket
-		instance_create_depth(x + (4 * facing),y - 20,-2,obj_confetti) // i hope this does not kill performance :p
+		var c = choose(0,1)
+		if c
+			instance_create_depth(x + (4 * facing),y - 20,-2,obj_confetti) // i hope this does not kill performance :p
 		
 		if abs(hsp) > 10
 			instance_create_depth(x,y,depth + 1,obj_trail)
@@ -225,6 +230,7 @@ switch state
 		
 		if place_meeting(x + hsp,y,obj_solid)
 		{
+			audio_stop_sound(sfx_getrocket)
 			x -= hsp
 			state = states.normal
 			vsp = -4
@@ -232,8 +238,8 @@ switch state
 			play_sfx(sfx_explode)
 			with instance_create_depth(x + (4 * facing),y - 20,-2,obj_killedrocket)
 				image_xscale = other.facing
-			// the xbox will NOT like this one (i dont care!)
-			repeat 150
+			// the xbox will NOT like this one (i dont care!) - originally 150
+			repeat 75
 				instance_create_depth(random_range(x - 20,x + 20),random_range(y - 20,y + 20),-2,obj_confetti) 
 		}
 		
@@ -247,22 +253,23 @@ switch state
 		//	hasdoublejump = true
 		//}
 		
-		if can_egg
-		{
-			if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
-			{
-				play_sfx(sfx_eggtoss)
+		//thou shalt not egg any longer
+		//if can_egg
+		//{
+		//	if (gamepad_button_check_pressed(0,CONT_X) || KEY_EGG_P) && instance_number(obj_eggprojectile) < 5
+		//	{
+		//		play_sfx(sfx_eggtoss)
 				
-				var dir = 1
-				if axdir < 0
-					dir = -1
-				if axdir = 0
-					dir = facing
+		//		var dir = 1
+		//		if axdir < 0
+		//			dir = -1
+		//		if axdir = 0
+		//			dir = facing
 					
-				with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
-					hspeed = (20 * dir)
-			}
-		}
+		//		with instance_create_depth(x,y,depth + 1,obj_eggprojectile)
+		//			hspeed = (20 * dir)
+		//	}
+		//}
 		hasdoublejump = true
 	}
 	break;

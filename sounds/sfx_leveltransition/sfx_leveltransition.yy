@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 1.0,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_leveltransition.ogg",
-  "duration": 26.42789,
+  "soundFile": "sfx_leveltransition.wav",
+  "duration": 2.046312,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",

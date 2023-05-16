@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 0.2,
+  "volume": 0.35,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sfx_hitflag.ogg",
-  "duration": 26.42789,
+  "soundFile": "sfx_hitflag.wav",
+  "duration": 2.195,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",

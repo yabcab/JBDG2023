@@ -1,5 +1,6 @@
 if !other.levelcomplete
 {
+	play_sfx(sfx_hitflag,false)
 	sprite_index = spr_flagpole_fly
 	y -= 50
 	repeat 50

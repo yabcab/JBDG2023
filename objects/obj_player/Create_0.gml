@@ -24,6 +24,7 @@ cangolf = true
 drawray = false
 rot = 0
 talking = false
+alreadypounded = false
 
 anim_jump = false
 anim_hurt = false
@@ -36,6 +37,7 @@ enum states
 	normal,
 	rocket,
 	golf,
+	groundpound,
 	
 }
 state = states.normal

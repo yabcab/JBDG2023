@@ -1,6 +1,9 @@
 var axdir = gamepad_axis_value(0,gp_axislh)
 var axisv = gamepad_axis_value(0,gp_axislv)
 
+if axisv <= 0
+	alreadypounded = false
+
 time++
 if grounded
 {
@@ -73,10 +76,8 @@ switch state
 			{
 				if axdir != 0
 					facing = sign(axdir)
-				if axdir < 0
-					hsp = approach(hsp,-walksp - (holdrun * runsp),0.25)
-				else if axdir > 0
-					hsp = approach(hsp,walksp + (holdrun * runsp),0.25)
+				if abs(axdir) > 0
+					hsp = approach(hsp,(walksp + (holdrun * runsp)) * axdir,0.25)
 				else
 					hsp = approach(hsp,0,0.5)
 	
@@ -164,6 +165,15 @@ switch state
 							if !place_meeting(x,y - 11,obj_solid)
 								y -= 11
 						}
+					}
+				}
+				
+				if can_groundpound
+				{
+					if axisv > 0.5 && !grounded && !alreadypounded
+					{
+						vsp = -4
+						state = states.groundpound
 					}
 				}
 			}
@@ -340,6 +350,22 @@ switch state
 			hsp = approach(hsp,0,0.15)
 		}
 	}
+	break;
+	
+	case states.groundpound:
+	{
+		alreadypounded = true
+		hsp = approach(hsp,3 * sign(axdir),0.25)
+		vsp = approach(vsp,20,0.7)
+		
+		if place_meeting(x,y + vsp,obj_solid)
+		{
+			y -= vsp
+			vsp = -5
+			state = states.normal
+		}
+	}
+	break;
 }
 
 #region up arrow

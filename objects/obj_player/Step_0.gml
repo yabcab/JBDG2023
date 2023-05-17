@@ -174,9 +174,11 @@ switch state
 			sprite_index = spr_playerJ_pain
 			hsp = lerp(hsp,0,0.05)
 			vsp = lerp(vsp,0,0.05)
-			deadtimer = approach(deadtimer,0,1)
+			deadtimer = approach(deadtimer,-1,1)
 			if deadtimer <= 0
 			{
+				if deadtimer > -1 && !audio_is_playing(sfx_bubblemove)
+					play_sfx(sfx_bubblemove)
 				hsp = 0
 				vsp = 0
 				x = lerp(x,checkpointx,0.035)
@@ -360,6 +362,8 @@ if arrowframetime >= 30 //2 fps
 
 if talking // to the right of npc when talking
 {
+	sprite_index = spr_playerJ_idle
+	
 	var i = instance_nearest(x,y,obj_npc)
 	
 	hsp = 0

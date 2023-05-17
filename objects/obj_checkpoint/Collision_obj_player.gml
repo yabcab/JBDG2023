@@ -5,7 +5,8 @@ with other
 }
 if !hit
 {
+	play_sfx(sfx_hitflag)
 	hit = true
-	repeat 75
+	repeat 40
 		instance_create_depth(x,y,depth,obj_confetti)
 }

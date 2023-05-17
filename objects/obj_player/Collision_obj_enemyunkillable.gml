@@ -18,7 +18,7 @@ else if state = states.rocket
 	with instance_create_depth(other.x,other.y,-1,obj_eggparticle)
 	{
 		sprite_index = spr_enemyangry_dead
-		hspeed = other.hspeed
+		hspeed = (obj_player.hsp * 2) + random_range(-2,2)
 		vspeed = random_range(-8,-12)
 	}
 }

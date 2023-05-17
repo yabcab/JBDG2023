@@ -1,1 +1,1 @@
-text = "Sugar Sugar Yum Yum"
+text = "Such a Long Shot"

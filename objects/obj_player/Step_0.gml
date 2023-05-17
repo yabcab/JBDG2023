@@ -118,6 +118,8 @@ switch state
 					hasdoublejump = false
 					anim_jump = true
 					image_index = 0
+					anim_hurt = false
+					anim_egg = false
 				}
 		
 				if jumping && vsp < -3 && (!gamepad_button_check(0,CONT_A) && !KEY_JMP)
@@ -232,6 +234,8 @@ switch state
 		
 		if place_meeting(x + hsp,y,obj_solid)
 		{
+			anim_jump = false
+			anim_hurt = true
 			audio_stop_sound(sfx_getrocket)
 			x -= hsp
 			state = states.normal

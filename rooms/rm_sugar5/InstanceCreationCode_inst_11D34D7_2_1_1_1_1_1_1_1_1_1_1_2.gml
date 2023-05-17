@@ -1,1 +1,1 @@
-text = "Shoot For The Walls!"
+text = "Such a Long Shot"

@@ -1,0 +1,1 @@
+txt = "Suplex the butter into the ground by\nholding down on the left stick"

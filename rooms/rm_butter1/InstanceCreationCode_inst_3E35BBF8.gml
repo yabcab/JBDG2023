@@ -1,0 +1,1 @@
+txt = "Fans will remove the floured effect"

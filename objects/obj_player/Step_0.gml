@@ -358,11 +358,102 @@ switch state
 		hsp = approach(hsp,3 * sign(axdir),0.25)
 		vsp = approach(vsp,20,0.7)
 		
-		if place_meeting(x,y + vsp,obj_solid)
+		if grounded
 		{
-			y -= vsp
+			y -= 11
 			vsp = -5
 			state = states.normal
+		}
+	}
+	break;
+	
+	case states.floured:
+	{
+		vsp = approach(vsp,18,0.5)
+		
+		if controllable && !broimdead
+		{
+			if KEY_L
+				axdir = -1
+			if KEY_R
+				axdir = 1
+			var holdrun = 0 //gamepad_button_check(0,CONT_RB)
+			var runsp = 3
+			var walksp = 12
+	
+			if levelcomplete
+			{
+				hsp = approach(hsp,0,0.5)
+				vsp = approach(vsp,0,0.5)
+				yoffspeed += 0.175 // too lazy to cap the speed :p
+				yoff -= yoffspeed
+			}
+			else
+			{
+				hsp = approach(hsp,10 * facing,0.25)
+	
+				if (grounded || place_meeting(x,y,obj_airjump) || place_meeting(x,y + 20,obj_solid)) && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
+				{
+					play_sfx(sfx_jump)
+					vsp = -15
+					jumping = true
+					hasdoublejump = true
+					anim_jump = true
+					image_index = 0
+					
+					if place_meeting(x,y,obj_airjump)
+					{
+						with instance_nearest(x,y,obj_airjump)
+						{
+							image_xscale = 1.6
+							image_yscale = 1.6
+							repeat 15
+								with instance_create_depth(x,y,depth - 1,obj_whiteparticle)
+								{
+									image_angle = point_direction(0,0,hspeed,vspeed)
+									sprite_index = spr_bubbleline
+									alphlower = random_range(0.07,0.09)
+									starth = abs(hspeed / 50)
+									startv = abs(vspeed / 50)
+								}
+						}
+					}
+				}
+				else if hasdoublejump && can_doublejump && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
+				{
+					repeat 15
+						with instance_create_depth(x,y,depth,obj_whiteparticle)
+							vspeed = random_range(3,5)
+					play_sfx(sfx_jump)
+					vsp = -15
+					jumping = true
+					hasdoublejump = false
+					anim_jump = true
+					image_index = 0
+					anim_hurt = false
+					anim_egg = false
+				}
+		
+				if jumping && vsp < -3 && (!gamepad_button_check(0,CONT_A) && !KEY_JMP)
+				{
+					vsp = -3
+					jumping = false
+				}
+	
+				if place_meeting(x + hsp,y,obj_solid) && abs(hsp) > 4
+				{
+					play_sfx(choose(sfx_hitwall1,sfx_hitwall2,sfx_hitwall3),false)
+					x -= hsp
+					hsp *= -0.75
+					facing *= -1
+					if grounded
+						vsp = -3
+					if !place_meeting(x,y - 11,obj_solid)
+						y -= 11
+					anim_hurt = true
+					anim_egg = false
+				}
+			}
 		}
 	}
 	break;

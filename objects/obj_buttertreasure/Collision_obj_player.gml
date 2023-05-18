@@ -1,4 +1,4 @@
-
+can_groundpound = true
 
 if !other.levelcomplete
 {

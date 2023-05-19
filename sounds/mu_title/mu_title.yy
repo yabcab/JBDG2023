@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "mu_title.mp3",
-  "duration": 113.86775,
+  "duration": 104.56816,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

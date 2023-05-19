@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_introcards",
-    "path": "sprites/spr_introcards/spr_introcards.yy",
+    "name": "spr_title",
+    "path": "sprites/spr_title/spr_title.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,10 +23,7 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -36,7 +33,7 @@
     "path": "folders/Objects/title.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_gameintro",
+  "name": "obj_titlelogo",
   "tags": [],
   "resourceType": "GMObject",
 }

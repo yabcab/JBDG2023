@@ -9,5 +9,8 @@ titlemusic = noone
 audio_sound_gain(mu_title,0,0)
 activated = false
 veroff = 100
+upspeed = 0
+yoff = 0
+goup = false
 
 //19.2 <--- not a secret code just a reference for myself to use when coding

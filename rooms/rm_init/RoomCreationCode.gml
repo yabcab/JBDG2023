@@ -14,7 +14,7 @@ globalvar can_egg; can_egg = false
 globalvar can_doublejump; can_doublejump = false
 globalvar can_groundpound; can_groundpound = false
 
-room_goto(rm_title)
+room_goto(rm_intro)
 
 if os_type = os_windows
 	window_set_size(1920,1080)

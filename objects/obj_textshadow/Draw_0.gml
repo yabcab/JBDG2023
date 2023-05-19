@@ -1,0 +1,8 @@
+draw_set_font(fnt_game)
+draw_set_halign(fa_center)
+draw_set_alpha(follow.image_alpha / 3)
+draw_set_color(c_black)
+draw_text(follow.x - 8,follow.y - follow.textoff + follow.bobsin + 8,follow.txt)
+draw_set_color(c_white)
+draw_set_alpha(1)
+draw_set_halign(fa_left)

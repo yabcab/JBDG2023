@@ -55,6 +55,7 @@
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},"order":0,},
     {"id":{"name":"ts_lev2","path":"tilesets/ts_lev2/ts_lev2.yy",},"order":2,},
     {"id":{"name":"spr_textbg_redcritter","path":"sprites/spr_textbg_redcritter/spr_textbg_redcritter.yy",},"order":5,},
+    {"id":{"name":"obj_textshadow","path":"objects/obj_textshadow/obj_textshadow.yy",},"order":10,},
     {"id":{"name":"sfx_bubblepop","path":"sounds/sfx_bubblepop/sfx_bubblepop.yy",},"order":22,},
     {"id":{"name":"spr_collects","path":"sprites/spr_collects/spr_collects.yy",},"order":19,},
     {"id":{"name":"sfx_bubblehit","path":"sounds/sfx_bubblehit/sfx_bubblehit.yy",},"order":23,},

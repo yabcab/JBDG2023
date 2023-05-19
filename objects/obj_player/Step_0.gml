@@ -1,5 +1,7 @@
 var axdir = gamepad_axis_value(0,gp_axislh)
 var axisv = gamepad_axis_value(0,gp_axislv)
+if KEY_D
+	axisv = 1
 
 if axisv <= 0
 	alreadypounded = false

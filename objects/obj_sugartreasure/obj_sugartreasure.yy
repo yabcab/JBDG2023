@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_eggcollect",
-    "path": "sprites/spr_eggcollect/spr_eggcollect.yy",
+    "name": "spr_sugar",
+    "path": "sprites/spr_sugar/spr_sugar.yy",
   },
   "solid": false,
   "visible": true,

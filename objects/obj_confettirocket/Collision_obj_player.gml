@@ -1,6 +1,6 @@
 with other
 {
-	if state != states.rocket
+	if state != states.rocket && !broimdead
 	{
 		play_sfx(sfx_getrocket)
 		state = states.rocket

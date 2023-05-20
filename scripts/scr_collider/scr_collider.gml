@@ -22,7 +22,7 @@ function collider_step()
 	
 	if place_meeting(x + hsp,y,obj_solid)
 	{
-		if !place_meeting(x + hsp,y - 20,obj_solid)
+		if !place_meeting(x + hsp,y - 20,obj_solid) && !broimdead
 		{
 			while place_meeting(x + hsp,y,obj_solid)
 				y--
@@ -81,4 +81,5 @@ function collider_init()
 	vsp = 0
 	grav = 0
 	jumping = false
+	broimdead = false
 }

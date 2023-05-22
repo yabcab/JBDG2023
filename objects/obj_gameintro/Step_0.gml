@@ -37,5 +37,5 @@ if activated
 if goup
 {
 	upspeed = approach(upspeed,20,0.25)
-	yoff += upspeed
+	y -= upspeed
 }

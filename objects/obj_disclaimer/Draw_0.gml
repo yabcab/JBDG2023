@@ -1,4 +1,4 @@
-draw_text(x,y,@"
+draw_text(x,y + bobsin,@"
 HAPPY BIRTHDAY!!!!!!!!!!
 Hello! Disclaimer!
 
@@ -9,6 +9,6 @@ be the best it can be, but some parts of it may be
 janky or rough around the edges due to time constraints. 
 I will probably make a small update sometime afterward 
 that fixes these issues. Thank you for being the best 
-friend i could ever ask for, and thank you for reading!
+friend I could ever ask for, and thank you for reading!
 
 Press Ⓐ to continue.") // this took forever to format correctly

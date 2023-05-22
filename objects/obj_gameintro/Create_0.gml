@@ -12,5 +12,6 @@ veroff = 100
 upspeed = 0
 yoff = 0
 goup = false
+depth = -9999
 
 //19.2 <--- not a secret code just a reference for myself to use when coding

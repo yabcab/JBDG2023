@@ -1,3 +1,5 @@
+//depricated object, its summer now, she wont see it until the day anyway.
+
 currpaused = false
 needunpause = false
 hue = 0

@@ -19,6 +19,7 @@ if state = states.normal
 }
 else if state = states.rocket
 {
+	points += 125
 	instance_destroy(other)
 	play_sfx(sfx_egghit)
 	with instance_create_depth(other.x,other.y,-1,obj_eggparticle)

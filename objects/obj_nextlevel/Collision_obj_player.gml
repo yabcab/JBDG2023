@@ -1,5 +1,6 @@
 if !other.levelcomplete
 {
+	points += 250
 	play_sfx(sfx_hitflag,false)
 	sprite_index = spr_flagpole_fly
 	y -= 50

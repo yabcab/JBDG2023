@@ -5,6 +5,7 @@ with other
 		//x = checkpointx
 		//y = checkpointy
 		
+		deaths++
 		state = states.normal
 		vsp = -7
 		broimdead = true

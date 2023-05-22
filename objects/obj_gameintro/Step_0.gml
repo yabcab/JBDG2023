@@ -14,18 +14,18 @@ else
 	{
 		if image_index != 2
 		{
-			alarm[1] = 20
+			alarm[1] = 17
 			set2 = true	
 		}
 		else
 		{
-			alarm[2] = 20
+			alarm[2] = 1
 			set2 = true	
 		}
 	}
 }
 
-if !activated && audio_sound_get_track_position(titlemusic) >= 19.2
+if !activated && audio_sound_get_track_position(titlemusic) >= 19.1
 	activated = true
 	
 if activated

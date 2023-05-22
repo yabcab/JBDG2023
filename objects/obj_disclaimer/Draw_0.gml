@@ -1,4 +1,5 @@
 draw_text(x,y,@"
+HAPPY BIRTHDAY!!!!!!!!!!
 Hello! Disclaimer!
 
 This birthday game (developed March 3rd - June [placehold]),

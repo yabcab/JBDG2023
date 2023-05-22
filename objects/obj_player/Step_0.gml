@@ -79,7 +79,7 @@ switch state
 				if axdir != 0
 					facing = sign(axdir)
 				if abs(axdir) > 0
-					hsp = approach(hsp,(walksp + (holdrun * runsp)) * axdir,0.25)
+					hsp = approach(hsp,(walksp + (holdrun * runsp)) * axdir,0.3)
 				else
 					hsp = approach(hsp,0,0.5)
 	

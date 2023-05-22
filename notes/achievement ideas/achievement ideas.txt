@@ -1,6 +1,6 @@
 -Meat Ball: dunk the meat baby given to you by the father into the hoop
--Baked with Love: beat the game with a good cake
+-Baked with REAL CHEESE: beat the game with a good cake
 -YIKES...: Beat the game with a bad cake
 -The soul of a great beast: hear bingle roar
--Tryna Cheat?: Input the konami code, which also brings up the debug display
+-Tryna Cheat?: Toggle debug mode
 

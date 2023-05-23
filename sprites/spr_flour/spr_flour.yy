@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 56,
-  "bbox_top": 2,
-  "bbox_bottom": 63,
+  "bbox_left": 6,
+  "bbox_right": 53,
+  "bbox_top": 10,
+  "bbox_bottom": 59,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"dd5b51a8-6bb2-4ce2-a2ca-7b4075ac4483","path":"sprites/spr_flour/spr_flour.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dd5b51a8-6bb2-4ce2-a2ca-7b4075ac4483","path":"sprites/spr_flour/spr_flour.yy",},"LayerId":{"name":"1647a20b-df87-4129-abcb-f436656b0ef9","path":"sprites/spr_flour/spr_flour.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_flour","path":"sprites/spr_flour/spr_flour.yy",},"resourceVersion":"1.0","name":"dd5b51a8-6bb2-4ce2-a2ca-7b4075ac4483","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5c0035c1-db4a-4465-af3f-274c8a99fcdf","path":"sprites/spr_flour/spr_flour.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5c0035c1-db4a-4465-af3f-274c8a99fcdf","path":"sprites/spr_flour/spr_flour.yy",},"LayerId":{"name":"56bee8a0-98e0-4d69-b20a-ea3dcb508a2b","path":"sprites/spr_flour/spr_flour.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_flour","path":"sprites/spr_flour/spr_flour.yy",},"resourceVersion":"1.0","name":"5c0035c1-db4a-4465-af3f-274c8a99fcdf","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_flour","path":"sprites/spr_flour/spr_flour.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 10.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"91b75187-5d40-4df5-b93a-ce2a4c75a301","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd5b51a8-6bb2-4ce2-a2ca-7b4075ac4483","path":"sprites/spr_flour/spr_flour.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"f9bbbc50-6bac-4997-b7b4-025fdd90c75f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5c0035c1-db4a-4465-af3f-274c8a99fcdf","path":"sprites/spr_flour/spr_flour.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,12 +65,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1647a20b-df87-4129-abcb-f436656b0ef9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"56bee8a0-98e0-4d69-b20a-ea3dcb508a2b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "placeholder and internal",
-    "path": "folders/Sprites/placeholder and internal.yy",
+    "name": "misc",
+    "path": "folders/Sprites/ITS A SECRET/sir are you sure/yes ok/misc.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_flour",

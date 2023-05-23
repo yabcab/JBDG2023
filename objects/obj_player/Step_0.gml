@@ -356,8 +356,13 @@ switch state
 	
 	case states.groundpound:
 	{
+		if abs(vsp) > 7
+			instance_create_depth(x,y,depth + 1,obj_trail)
+		
+		sprite_index = spr_playerJ_groundpound
+		
 		alreadypounded = true
-		hsp = approach(hsp,3 * sign(axdir),0.25)
+		hsp = approach(hsp,3 * sign(axdir),0.75)
 		vsp = approach(vsp,20,0.7)
 		
 		if grounded
@@ -365,6 +370,9 @@ switch state
 			y -= 11
 			vsp = -5
 			state = states.normal
+			instance_create_depth(x,bbox_bottom + 15,depth,obj_butteronground)
+			repeat 10
+				instance_create_depth(x,bbox_bottom,depth,obj_whiteparticle)
 		}
 	}
 	break;

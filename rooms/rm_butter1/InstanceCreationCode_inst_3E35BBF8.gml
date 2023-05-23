@@ -1,1 +1,1 @@
-txt = "Fans will remove the floured effect"
+txt = "Placing the flour in a bowl will remove the effect."

@@ -1,0 +1,1 @@
+text = "Now you're a meteorite!"

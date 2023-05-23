@@ -94,6 +94,24 @@ function text_checker()
 				alarm[0] = 1
 		}
 		break;
+		
+		case "@KILL_JAYLA": // whoops! murder!
+		{
+			with obj_player // same as collision with obj_spikes
+			{
+				deaths++
+				state = states.normal
+				vsp = -7
+				broimdead = true
+				deadtimer = 60
+				state = states.normal
+				audio_stop_sound(sfx_getrocket)
+				instance_create_depth(x,y,-100,obj_rescuebubble)
+		
+				play_sfx(sfx_bubblehit)
+			}
+		}
+		break;
 	}
 	
 	if string_copy(text[text_selected],1,1) = "@"

@@ -17,15 +17,15 @@ globalvar deaths; deaths = 0
 globalvar coins; coins = 0
 globalvar points; points = 0
 
-room_goto(rm_title)
+room_goto(rm_sugar1)
 
 if os_type = os_windows
 	window_set_size(1920,1080)
 
 show_debug_overlay(true)
 
-//when i have music playing
-//audio_group_set_gain(audiogroup_default,0,0) 
+//for when i have music playing
+audio_group_set_gain(audiogroup_default,0,0) 
 
 #macro CONT_A gp_face1
 #macro CONT_X gp_face3

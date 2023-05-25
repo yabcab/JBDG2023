@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 1,
-  "volume": 0.5,
+  "volume": 0.25,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_intermission.mp3",
-  "duration": 216.47673,
+  "soundFile": "mu_credits.mp3",
+  "duration": 112.039185,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
-  "name": "mu_intermission",
+  "name": "mu_credits",
   "tags": [],
   "resourceType": "GMSound",
 }

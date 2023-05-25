@@ -18,6 +18,7 @@ function make_shadow()
 	rot = 0
 	facing = 1
 	bobsin = 0
+	rotsin = 0
 	
 	//make it
 	with instance_create_depth(0,0,101,obj_shadow)

@@ -7,3 +7,4 @@ if obj_gameintro.activated
 
 time++
 bobsin = sin(time / 30) * 6
+rotsin = sin(time / 60) * 7

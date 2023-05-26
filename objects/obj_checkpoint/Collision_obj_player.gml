@@ -1,10 +1,11 @@
-with other
-{
-	checkpointx = other.x
-	checkpointy = other.y
-}
 if !hit
 {
+	with other
+	{
+		checkpointx = other.x
+		checkpointy = other.y
+	}
+	
 	play_sfx(sfx_hitflag)
 	hit = true
 	repeat 40

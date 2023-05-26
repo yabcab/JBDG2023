@@ -1,2 +1,2 @@
 instance_create_depth(x,y,depth,obj_surfacetransition)
-alarm[1] = 1
+alarm[1] = 2

@@ -30,4 +30,5 @@ function init_vars() // this is gonna look stupid out of the project it was take
 	inv_alph = 1
 	invtimer = 0
 	invflashtimer = 0
+	broimdead = false
 }

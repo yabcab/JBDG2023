@@ -17,7 +17,7 @@ globalvar deaths; deaths = 0
 globalvar coins; coins = 0
 globalvar points; points = 0
 
-room_goto(rm_disclaimer)
+room_goto(rm_butter4)
 
 if os_type = os_windows
 	window_set_size(1920,1080)

@@ -112,6 +112,24 @@ function text_checker()
 			}
 		}
 		break;
+		
+		case "@BECOME_THINGY":
+		{
+			npcid = npcs.badfather
+			talkspr = spr_father_talk
+			idlespr = spr_father_idle
+			drawnbg = spr_textbg_father
+			
+			max_texts = 0
+			text[0] = "I lost my son. Where is he?"
+		}
+		break;
+		
+		case "@SHOW_THE_IMAGE":
+		{
+			glue_overlay(spr_updogimage)
+		}
+		break;
 	}
 	
 	if string_copy(text[text_selected],1,1) = "@"

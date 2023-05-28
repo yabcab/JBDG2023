@@ -132,6 +132,7 @@
     {"id":{"name":"sfx_run1","path":"sounds/sfx_run1/sfx_run1.yy",},"order":5,},
     {"id":{"name":"mu_sugar","path":"sounds/mu_sugar/mu_sugar.yy",},"order":3,},
     {"id":{"name":"ts_lev1_s","path":"tilesets/ts_lev1_s/ts_lev1_s.yy",},"order":1,},
+    {"id":{"name":"spr_updogimage","path":"sprites/spr_updogimage/spr_updogimage.yy",},"order":22,},
     {"id":{"name":"obj_destroyable","path":"objects/obj_destroyable/obj_destroyable.yy",},"order":5,},
     {"id":{"name":"sfx_eggsplat","path":"sounds/sfx_eggsplat/sfx_eggsplat.yy",},"order":16,},
     {"id":{"name":"obj_golfytitle","path":"objects/obj_golfytitle/obj_golfytitle.yy",},"order":7,},

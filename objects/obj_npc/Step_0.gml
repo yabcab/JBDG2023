@@ -27,6 +27,7 @@ if speaking
 	textcopy_timer--
 	if textcopy_timer <= 0 && text_spot < string_length(text[text_selected]) + 1
 	{
+		play_sfx(sfx_text)
 		textcopy_timer = 2
 		textcopy += string_copy(text[text_selected],text_spot,1)
 		var textlinestart = 0
@@ -46,6 +47,7 @@ if speaking
 				textcopy = ""
 				text_spot = 1
 				text_selected++
+				play_sfx(sfx_textcontinue,false)
 			}
 			else
 			{
@@ -58,6 +60,7 @@ if speaking
 
 				controllable = true
 				obj_player.talking = false
+				play_sfx(sfx_textclose,false)
 			}
 		}
 		else
@@ -80,6 +83,7 @@ else
 	textbox_yoff = lerp(textbox_yoff,150,0.2)
 	if place_meeting(x,y,obj_player) && (gamepad_axis_value(0,gp_axislv) < -0.2 || keyboard_check(vk_up)) && !speaking && !fadeaway
 	{
+		play_sfx(sfx_textopen,false)
 		speaking = true
 		speechbubble = false
 		textbox_show = true

@@ -379,6 +379,10 @@ switch state
 	
 	case states.floured:
 	{
+		image_speed = 1
+		sprite_index = spr_playerJ_flour
+		instance_create_depth(x,y,depth,obj_whiteparticle)
+		
 		vsp = approach(vsp,18,0.5)
 		
 		if controllable && !broimdead

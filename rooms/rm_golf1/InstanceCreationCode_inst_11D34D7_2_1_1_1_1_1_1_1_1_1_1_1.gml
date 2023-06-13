@@ -1,1 +1,1 @@
-text = "GOLF YOUR JAYLA - 1"
+text = "GOLF WAS NEVER FINISHED LOL"

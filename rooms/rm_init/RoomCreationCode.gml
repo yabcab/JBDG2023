@@ -16,16 +16,17 @@ globalvar can_groundpound; can_groundpound = false
 globalvar deaths; deaths = 0
 globalvar coins; coins = 0
 globalvar points; points = 0
+globalvar skip_loading; skip_loading = false
 
-room_goto(rm_sugar2)
+room_goto(rm_butter1)
 
 if os_type = os_windows
 	window_set_size(1920,1080)
 
-show_debug_overlay(true)
+//show_debug_overlay(true)
 
 //for when i have music playing
-audio_group_set_gain(audiogroup_default,0,0) 
+//audio_group_set_gain(audiogroup_default,0,0) 
 
 #macro CONT_A gp_face1
 #macro CONT_X gp_face3

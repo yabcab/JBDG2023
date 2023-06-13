@@ -2,7 +2,7 @@ draw_text(x,y + bobsin,@"
 HAPPY BIRTHDAY!!!!!!!!!!
 Hello! Disclaimer!
 
-This birthday game (developed March 3rd - June [placehold]),
+This birthday game (developed March 3rd - June 13th),
 is probably quite rushed in some areas! Be aware of that! 
 A lot of work has gone into making sure this gift can 
 be the best it can be, but some parts of it may be 

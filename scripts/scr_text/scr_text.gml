@@ -48,6 +48,7 @@ function text_checker()
 		
 		case "@SUMMON_MEATBABY":
 		{
+			play_sfx(sfx_meatbabyspawn,false)
 			var yy = obj_player.y - 300
 			var xx = obj_player.x
 			instance_create_depth(xx,yy,-1,obj_meatbaby)
@@ -58,6 +59,7 @@ function text_checker()
 		
 		case "@MOVE_UP":
 		{
+			play_sfx(sfx_flyup,false)
 			vspeed = -3
 			alarm[1] = 300
 		}
@@ -71,6 +73,7 @@ function text_checker()
 		
 		case "@EXPLODE_AND_DIE":
 		{
+			play_sfx(sfx_explosion,false)
 			idlespr = spr_empty
 			talkspr = spr_empty
 			with instance_create_depth(x,y,depth,obj_smokepuff)

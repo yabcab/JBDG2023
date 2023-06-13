@@ -17,3 +17,10 @@ bobsin = 0
 time = 0
 
 //19.2 <--- not a secret code just a reference for myself to use when coding
+
+if skip_loading
+{
+	fadestate = 1
+	image_alpha = 0
+	alarm[0] = 1
+}

@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "mu_credits.mp3",
-  "duration": 112.039185,
+  "soundFile": "mu_credits.wav",
+  "duration": 38.499,
   "parent": {
     "name": "music",
     "path": "folders/Sounds/music.yy",

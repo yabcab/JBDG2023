@@ -1,4 +1,4 @@
-draw_text(3,500 + veroff + bobsin,"Ver. DEV-" + date_date_string(GM_build_date))
+draw_text(3,500 + veroff + bobsin,"Ver. 1.0.0")
 
 draw_set_color(c_black)
 draw_set_alpha(rectalph)

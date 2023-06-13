@@ -1,1 +1,1 @@
-text = "I'm egg.           yes"
+text = "Do you eat eggs?"

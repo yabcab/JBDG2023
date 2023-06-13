@@ -17,7 +17,7 @@ globalvar deaths; deaths = 0
 globalvar coins; coins = 0
 globalvar points; points = 0
 globalvar skip_loading; skip_loading = false
-globalvar version; version = "1.0.0-pre1"
+globalvar version; version = "1.0.0"
 
 room_goto(rm_disclaimer)
 

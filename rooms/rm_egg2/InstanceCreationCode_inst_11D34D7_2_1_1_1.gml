@@ -1,1 +1,1 @@
-text = "Having a fun time with my underdeveloped chickens"
+text = "Chicken Incubation Capsule"

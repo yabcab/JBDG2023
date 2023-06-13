@@ -1,1 +1,1 @@
-text = "Lefty righty inny outy uppy downy"
+text = "jarlatag buy me egg pls"

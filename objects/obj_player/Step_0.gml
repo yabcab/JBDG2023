@@ -85,6 +85,8 @@ switch state
 	
 				if (grounded || place_meeting(x,y,obj_airjump) || place_meeting(x,y + 20,obj_solid)) && (gamepad_button_check_pressed(0,CONT_A) || KEY_JMP_P)
 				{
+					if place_meeting(x,y,obj_airjump) // bad coding practice. do i care? no, i have hours remaining.
+						play_sfx(sfx_bubblejump)
 					play_sfx(sfx_jump)
 					vsp = -15
 					jumping = true
@@ -136,10 +138,10 @@ switch state
 					play_sfx(choose(sfx_hitwall1,sfx_hitwall2,sfx_hitwall3),false)
 					x -= hsp
 					hsp *= -0.75
-					if grounded
-						vsp = -3
-					if !place_meeting(x,y - 11,obj_solid)
-						y -= 11
+					//if grounded
+					//	vsp = -3
+					//if !place_meeting(x,y - 11,obj_solid)
+					//	y -= 11
 					anim_hurt = true
 					anim_egg = false
 				}
@@ -174,6 +176,7 @@ switch state
 				{
 					if axisv > 0.5 && !grounded && !alreadypounded
 					{
+						//play_sfx(sfx_gpstart)
 						vsp = -4
 						state = states.groundpound
 					}
@@ -367,6 +370,8 @@ switch state
 		
 		if grounded
 		{
+			audio_stop_sound(sfx_gpstart)
+			play_sfx(sfx_buttersmush)
 			y -= 11
 			vsp = -5
 			state = states.normal
@@ -379,6 +384,23 @@ switch state
 	
 	case states.floured:
 	{
+		if grounded && abs(hsp) > 2
+		{
+			runtimer++
+			if runtimer > 17 - abs(hsp)
+			{
+				runtimer = 0
+				if soundpick = sfx_run1
+					soundpick = sfx_run2
+				else
+					soundpick = sfx_run1
+		
+				play_sfx(soundpick,false)
+			}
+		}
+		else
+			runtimer = 99
+		
 		image_speed = 1
 		sprite_index = spr_playerJ_flour
 		instance_create_depth(x,y,depth,obj_whiteparticle)
@@ -460,10 +482,6 @@ switch state
 					x -= hsp
 					hsp *= -0.75
 					facing *= -1
-					if grounded
-						vsp = -3
-					if !place_meeting(x,y - 11,obj_solid)
-						y -= 11
 					anim_hurt = true
 					anim_egg = false
 				}
@@ -500,8 +518,14 @@ if talking // to the right of npc when talking
 	sprite_index = spr_playerJ_idle
 	
 	var i = instance_nearest(x,y,obj_npc)
-	
+	if !instance_exists(i)
+	{
+		talking = false
+		controllable = true	
+	}
+	else
+		x = lerp(x,i.x + 50,0.1)
+		
 	hsp = 0
-	x = lerp(x,i.x + 50,0.1)
 	facing = -1
 }

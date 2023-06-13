@@ -1,6 +1,6 @@
 {
-  "option_windows_display_name": "Trials And Tribulations",
-  "option_windows_executable_name": "${project_name}.exe",
+  "option_windows_display_name": "Trials And Tribulations v1.0.0",
+  "option_windows_executable_name": "Trials And Tribulations.exe",
   "option_windows_version": "1.0.0.0",
   "option_windows_company_info": "idk",
   "option_windows_product_info": "JBDG2023",

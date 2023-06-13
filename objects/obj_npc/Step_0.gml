@@ -81,11 +81,11 @@ if speaking
 else
 {
 	textbox_yoff = lerp(textbox_yoff,150,0.2)
-	if place_meeting(x,y,obj_player) && (gamepad_axis_value(0,gp_axislv) < -0.2 || keyboard_check(vk_up)) && !speaking && !fadeaway
+	if place_meeting(x,y,obj_player) && (gamepad_axis_value(0,gp_axislv) < -0.2 || keyboard_check(vk_up)) && !speaking && !fadeaway && obj_player.state != states.floured && obj_player.state != states.rocket
 	{
 		play_sfx(sfx_textopen,false)
 		speaking = true
-		speechbubble = false
+		//speechbubble = false
 		textbox_show = true
 		
 		with obj_player

@@ -1,1 +1,1 @@
-text = "Such a Long Shot"
+text = "The Same Thing"

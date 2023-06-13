@@ -1,1 +1,1 @@
-text = "Everytime you hit a wall I become angrier."
+text = "Please slam your face into this wall. :D"

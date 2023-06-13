@@ -1,1 +1,1 @@
-text = "Grand Finale"
+text = "Grand Finale (Please Eat Cake!)"

@@ -1,1 +1,1 @@
-text = "You know what they say a doctor a day keeps the rocket away"
+text = "You know what they say a doctor a day keeps the rocket away. You cant read this part of the text lol"

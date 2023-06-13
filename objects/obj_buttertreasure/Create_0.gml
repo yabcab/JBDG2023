@@ -7,6 +7,6 @@ aft2cos = 0
 
 targetroom = room
 
-image_blend = c_red
+followplayer = false
 
 make_shadow()

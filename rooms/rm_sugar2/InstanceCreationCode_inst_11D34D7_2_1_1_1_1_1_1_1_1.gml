@@ -1,1 +1,1 @@
-text = "Cajoodle Season Go Backsies"
+text = "No Takebacksies!"

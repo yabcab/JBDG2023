@@ -1,1 +1,1 @@
-text = "Now you're a meteorite!"
+text = "Flourey Buttery Meteor"

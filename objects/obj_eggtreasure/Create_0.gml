@@ -8,3 +8,5 @@ aft2cos = 0
 targetroom = room
 
 make_shadow()
+
+followplayer = false

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_flourdestroyable",
-    "path": "sprites/spr_flourdestroyable/spr_flourdestroyable.yy",
+    "name": "spr_flourblocks",
+    "path": "sprites/spr_flourblocks/spr_flourblocks.yy",
   },
   "solid": false,
   "visible": true,

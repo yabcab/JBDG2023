@@ -1,9 +1,9 @@
 if im_so_active
 {
-	if credheight > -1425 // please little number be good to me :(
+	if credheight > (690 + string_height(creditstring)) * -1
 	{
 		credheight -= 0.75
-		fadeamount = lerp(fadeamount,0,0.025)	
+		fadeamount = lerp(fadeamount,0,0.025)
 	}
 	else
 	{

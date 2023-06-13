@@ -259,6 +259,7 @@
     {"id":{"name":"rm_egg3","path":"rooms/rm_egg3/rm_egg3.yy",},"order":6,},
     {"id":{"name":"spr_redcritter_talk","path":"sprites/spr_redcritter_talk/spr_redcritter_talk.yy",},"order":10,},
     {"id":{"name":"spr_bingle","path":"sprites/spr_bingle/spr_bingle.yy",},"order":1,},
+    {"id":{"name":"spr_flourblocks","path":"sprites/spr_flourblocks/spr_flourblocks.yy",},"order":9,},
     {"id":{"name":"obj_titleplaybutton","path":"objects/obj_titleplaybutton/obj_titleplaybutton.yy",},"order":7,},
     {"id":{"name":"spr_textbg_updog","path":"sprites/spr_textbg_updog/spr_textbg_updog.yy",},"order":4,},
     {"id":{"name":"spr_playerJ_air","path":"sprites/spr_playerJ_air/spr_playerJ_air.yy",},"order":3,},

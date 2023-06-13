@@ -15,6 +15,12 @@ Marioket
 osp
 ?JDrive
 
+--Bingle Sound--
+Drooly
+
+--Featured Animal--
+Bingle
+
 --Music Used--
 Monseni Lotus - Disclaimer
 normal evening - Title
@@ -25,5 +31,4 @@ Planet X - Area 4
 abc123genesis (trimmed) - Credits
 
 Developed March 3rd - June 13th
-v1.0.0
-"
+Ver. " + version

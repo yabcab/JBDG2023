@@ -4,3 +4,4 @@
 -The soul of a great beast: hear bingle roar
 -Tryna Cheat?: Toggle debug mode
 
+(achievements didnt make it, update v1.1?)

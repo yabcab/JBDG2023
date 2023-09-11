@@ -9,6 +9,8 @@ function init_vars() // this is gonna look stupid out of the project it was take
 	grav = 0
 	jumping = false
 	slope_on_middle = false
+	previousframe_sloped = false
+	ignore_collides = false
 	
 	//pauser
 	is_paused = false

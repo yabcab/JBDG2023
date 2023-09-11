@@ -30,10 +30,14 @@ if speaking
 		play_sfx(sfx_text)
 		textcopy_timer = 2
 		textcopy += string_copy(text[text_selected],text_spot,1)
+		
+		if string_pos_ext(" ",textcopy,text_spot)
+			nextword = string_copy(text[text_selected],text_spot,(string_pos_ext(" ",text[text_selected],text_spot + 1) + 1) - text_spot)
+		
 		var textlinestart = 0
 		while string_pos_ext("\n",textcopy,textlinestart)
 			textlinestart = string_pos_ext("\n",textcopy,textlinestart) + 1
-		if string_width(string_copy(textcopy,textlinestart,999)) > text_wrap_width && string_copy(text[text_selected],text_spot,1) = " "
+		if string_width(string_copy(textcopy,textlinestart,999) + nextword) > text_wrap_width && string_copy(text[text_selected],text_spot,1) = " "
 			textcopy += "\n"
 		text_spot++
 	}
@@ -69,10 +73,14 @@ if speaking
 			for (text_spot = 1; text_spot < string_length(text[text_selected]) + 1; text_spot++)
 			{
 				textcopy += string_copy(text[text_selected],text_spot,1)
+				
+				if string_pos_ext(" ",textcopy,text_spot)
+					nextword = string_copy(text[text_selected],text_spot,(string_pos_ext(" ",text[text_selected],text_spot + 1) + 1) - text_spot)
+		
 				var textlinestart = 0
 				while string_pos_ext("\n",textcopy,textlinestart)
 					textlinestart = string_pos_ext("\n",textcopy,textlinestart) + 1
-				if string_width(string_copy(textcopy,textlinestart,999)) > text_wrap_width && string_copy(text[text_selected],text_spot,1) = " "
+				if string_width(string_copy(textcopy,textlinestart,999) + nextword) > text_wrap_width && string_copy(text[text_selected],text_spot,1) = " "
 					textcopy += "\n"
 			}
 		}

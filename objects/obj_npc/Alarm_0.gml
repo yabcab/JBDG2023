@@ -1,3 +1,7 @@
+for (var i = 0; i < max_texts; i++)
+	if string_copy(text[i],1,1) != "@"
+		text[i] += " " // fixes an edge case with line wrapper
+		
 switch npcid
 {
 	case npcs.lemonhead:

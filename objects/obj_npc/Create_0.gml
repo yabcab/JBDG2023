@@ -1,3 +1,5 @@
+nextword = ""
+
 //if speechbubble
 //	my_speechbubble = instance_create_layer(bbox_left - 25,bbox_top - 25,"Instances_outlinedblack",obj_npcspeechbubble)
 	

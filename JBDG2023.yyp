@@ -169,6 +169,7 @@
     {"id":{"name":"rm_sugar2","path":"rooms/rm_sugar2/rm_sugar2.yy",},"order":10,},
     {"id":{"name":"spr_confettilauncher","path":"sprites/spr_confettilauncher/spr_confettilauncher.yy",},"order":17,},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},"order":0,},
+    {"id":{"name":"game progression","path":"notes/game progression/game progression.yy",},"order":3,},
     {"id":{"name":"spr_father_idle","path":"sprites/spr_father_idle/spr_father_idle.yy",},"order":5,},
     {"id":{"name":"obj_confetti","path":"objects/obj_confetti/obj_confetti.yy",},"order":4,},
     {"id":{"name":"spr_flagpole_fly","path":"sprites/spr_flagpole_fly/spr_flagpole_fly.yy",},"order":9,},

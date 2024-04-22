@@ -251,6 +251,7 @@
     {"id":{"name":"spr_butteringround","path":"sprites/spr_butteringround/spr_butteringround.yy",},"order":6,},
     {"id":{"name":"rm_intro3","path":"rooms/rm_intro3/rm_intro3.yy",},"order":2,},
     {"id":{"name":"obj_gameintro","path":"objects/obj_gameintro/obj_gameintro.yy",},"order":0,},
+    {"id":{"name":"release todos","path":"notes/release todos/release todos.yy",},"order":3,},
     {"id":{"name":"bg_placeholder","path":"sprites/bg_placeholder/bg_placeholder.yy",},"order":6,},
     {"id":{"name":"obj_flourdestroyable","path":"objects/obj_flourdestroyable/obj_flourdestroyable.yy",},"order":16,},
     {"id":{"name":"sfx_explode","path":"sounds/sfx_explode/sfx_explode.yy",},"order":18,},

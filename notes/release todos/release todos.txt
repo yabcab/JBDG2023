@@ -1,0 +1,29 @@
+OST TO MAKE:
+-title / level select / settings
+-level 1
+-level 2
+-level 3
+-level 4
+-credits
+
+MOBILE STUFF:
+-touch control icons
+-figure out changing resolution and ports accordingly to prevent mixels
+-ability to press buttons on title
+-ability to change settings on touchscreen
+-ability to scroll level select on touchscreen
+
+CONTROLLER SUPPORT:
+-detect whether controller is plugged in or not and change button prompts accordingly (w/ option to change controller glyphs)
+
+GENERAL AND EXTRA:
+-add stuff in the background that moves around
+-more decor in the levels
+-level select
+-save data (saves level progress and settings)
+-settings
+-change title screen to have buttons instead of "press a to play"
+-some sort of intro and ending cutscene to explain story and such
+-more levels
+-additional npcs
+-MAYBE minigames

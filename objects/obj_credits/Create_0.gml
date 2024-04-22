@@ -6,14 +6,14 @@ alarm[0] = 120 // fucked up workaround for the audio refusing to play
 creditstring = @"
 
 --Developed by--
-Jacob
+Jacob Scherer
 
 --Playtesting--
-Drooly
-Sodamang
-Marioket
-osp
-?JDrive
+Drooly (PC)
+Sodamang (PC)
+Marioket (PC)
+osp (PC)
+?JDrive (PC)
 
 --Bingle Sound--
 Drooly

@@ -1,5 +1,5 @@
 hsp = 3 * facing
-var solid_in_way = place_meeting(x + hsp,y,obj_solid)
+var solid_in_way = place_meeting(x + hsp + facing,y,obj_solid)
 var no_ground_left = ((!position_meeting(bbox_left - hsp,bbox_bottom + 1,obj_solid) && !position_meeting(bbox_left - hsp,bbox_bottom + 1,obj_platform)) && facing = -1)
 var no_ground_right = ((!position_meeting(bbox_right + hsp,bbox_bottom + 1,obj_solid) && !position_meeting(bbox_right + hsp,bbox_bottom + 1,obj_platform)) && facing = 1)
 if grounded

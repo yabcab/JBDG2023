@@ -1,4 +1,4 @@
-OST TO MAKE:
+OST TRACKS TO MAKE:
 -title / level select / settings
 -level 1
 -level 2
@@ -7,6 +7,9 @@ OST TO MAKE:
 -credits
 
 MOBILE STUFF:
+-get info needed to compile builds
+-figure out how to get the game running on the iphone
+-find andriod phone and get it into google dev account
 -touch control icons
 -figure out changing resolution and ports accordingly to prevent mixels
 -ability to press buttons on title
@@ -17,13 +20,19 @@ CONTROLLER SUPPORT:
 -detect whether controller is plugged in or not and change button prompts accordingly (w/ option to change controller glyphs)
 
 GENERAL AND EXTRA:
+-collectable sticker in each level
 -add stuff in the background that moves around
 -more decor in the levels
 -level select
 -save data (saves level progress and settings)
--settings
+-settings (volume, fullscreen)
 -change title screen to have buttons instead of "press a to play"
 -some sort of intro and ending cutscene to explain story and such
 -more levels
 -additional npcs
 -MAYBE minigames
+
+CHANGES TO MAKE:
+-go thru the level names and change accordingly
+-maybe replace current player with skoimp or a different critter (redo sprites)
+-redo title logo sprite

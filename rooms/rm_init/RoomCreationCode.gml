@@ -40,9 +40,13 @@ if os_type = os_windows
 //you are building Trails and Tribulations primarily to be run on XBOX UWP WITH A CONTROLLER!!
 //bitch
 #macro KEY_L keyboard_check(vk_left)
+#macro KEY_L_P keyboard_check_pressed(vk_left)
 #macro KEY_R keyboard_check(vk_right)
+#macro KEY_R_P keyboard_check_pressed(vk_right)
 #macro KEY_U keyboard_check(vk_up)
+#macro KEY_U_P keyboard_check_pressed(vk_up)
 #macro KEY_D keyboard_check(vk_down)
+#macro KEY_D_P keyboard_check_pressed(vk_down)
 #macro KEY_JMP keyboard_check(ord("Z"))
 #macro KEY_JMP_P keyboard_check_pressed(ord("Z"))
 #macro KEY_EGG_P keyboard_check_pressed(ord("X"))

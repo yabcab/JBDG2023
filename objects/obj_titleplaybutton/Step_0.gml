@@ -7,11 +7,16 @@ if obj_gameintro.activated
 		y = lerp(y,ystart,0.1)
 	else
 		y = lerp(y,600,0.1)
-	if canpress && (KEY_JMP_P || gamepad_button_check_pressed(0,CONT_A))
+	if canpress && (KEY_JMP_P || gamepad_button_check_pressed(0,CONT_A) && selection = 0)
 	{
 		alarm[0] = 120
 		canpress = false	
 		audio_stop_all()
 		play_sfx(sfx_playgame,false)
+	}
+	
+	if canpress
+	{
+		
 	}
 }

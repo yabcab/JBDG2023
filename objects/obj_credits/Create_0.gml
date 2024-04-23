@@ -30,5 +30,4 @@ Planet Q - Area 3
 Planet X - Area 4
 abc123genesis (trimmed) - Credits
 
-Developed March 3rd - June 13th
 Ver. " + version

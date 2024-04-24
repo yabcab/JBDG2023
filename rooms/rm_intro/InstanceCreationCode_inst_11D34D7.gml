@@ -1,1 +1,1 @@
-text = "Welcome!"
+text = level_names[1]

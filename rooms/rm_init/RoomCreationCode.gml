@@ -17,9 +17,9 @@ globalvar deaths; deaths = 0
 globalvar coins; coins = 0
 globalvar points; points = 0
 globalvar skip_loading; skip_loading = false
-globalvar version; version = "1.0.0"
+globalvar version; version = "1.0.devagain"
 
-room_goto(rm_disclaimer)
+room_goto(rm_intro5)
 
 if os_type = os_windows
 	window_set_size(1920,1080)
@@ -50,3 +50,114 @@ if os_type = os_windows
 #macro KEY_JMP keyboard_check(ord("Z"))
 #macro KEY_JMP_P keyboard_check_pressed(ord("Z"))
 #macro KEY_EGG_P keyboard_check_pressed(ord("X"))
+
+globalvar level_completion; level_completion = []
+globalvar max_completed_level; max_completed_level = 0
+globalvar level_id; level_id = -1
+load_save()
+
+globalvar level_names; level_names = []
+globalvar level_rooms; level_rooms = []
+var l = 1
+
+#region world 1
+level_names[l] = "1-1 - Welcome"
+level_rooms[l] = rm_intro
+l++
+level_names[l] = "1-2 - Head Smashing"
+level_rooms[l] = rm_intro2
+l++
+level_names[l] = "1-3 - Bubby Bubbles"
+level_rooms[l] = rm_intro3
+l++
+level_names[l] = "1-4 - Bubbles With Sharp Things"
+level_rooms[l] = rm_intro4
+l++
+level_names[l] = "1-5 - The Great Ascent"
+level_rooms[l] = rm_intro5
+l++
+level_names[l] = "1-6 - NAME"
+level_rooms[l] = rm_intro4 // TODO NEW LEVEL
+l++
+#endregion
+
+#region world 2
+level_names[l] = "2-1 - Into to Scrambled Eggs"
+level_rooms[l] = rm_egg1
+l++
+level_names[l] = "2-2 - NAME"
+level_rooms[l] = rm_intro // TODO MAKE LEVEL
+l++
+level_names[l] = "2-3 - Meat Baby's Curse"
+level_rooms[l] = rm_egg2
+l++
+level_names[l] = "2-4 - The Unstoppable Red Guy"
+level_rooms[l] = rm_egg3
+l++
+level_names[l] = "2-5 - Bingle Time"
+level_rooms[l] = rm_egg4
+l++
+level_names[l] = "2-6 - Excavation Site"
+level_rooms[l] = rm_egg5
+l++
+level_names[l] = "2-7 - NAME"
+level_rooms[l] = rm_intro // TODO NEW LEVEL
+l++
+level_names[l] = "2-8 - NAME"
+level_rooms[l] = rm_intro // TODO NEW LEVEL
+l++
+#endregion
+
+#region world 3
+level_names[l] = "3-1 - Sugar Town"
+level_rooms[l] = rm_sugar1
+l++
+level_names[l] = "3-2 - The Big Launch"
+level_rooms[l] = rm_sugar2
+l++
+level_names[l] = "3-3 - Back Then Fourth"
+level_rooms[l] = rm_sugar3
+l++
+level_names[l] = "3-4 - The Long Haul"
+level_rooms[l] = rm_sugar4
+l++
+level_names[l] = "3-5 - NAME"
+level_rooms[l] = rm_egg4 // TODO MAKE LEVEL
+l++
+level_names[l] = "3-6 - The Longer Haul"
+level_rooms[l] = rm_sugar5
+l++
+level_names[l] = "3-7 - NAME"
+level_rooms[l] = rm_intro // TODO MAKE LEVEL
+l++
+level_names[l] = "3-8 - NAME"
+level_rooms[l] = rm_intro // TODO MAKE LEVEL
+l++
+#endregion
+
+#region world 4
+level_names[l] = "4-1 - Buttery Butterson"
+level_rooms[l] = rm_butter1
+l++
+level_names[l] = "4-2 - The Magic of Flour"
+level_rooms[l] = rm_butter2
+l++
+level_names[l] = "4-3 - 50 Foot Drop Test"
+level_rooms[l] = rm_butter3
+l++
+level_names[l] = "3-4 - Drop Flight"
+level_rooms[l] = rm_butter4
+l++
+level_names[l] = "4-5 - NAME"
+level_rooms[l] = rm_egg4 // TODO MAKE LEVEL
+l++
+level_names[l] = "4-6 - NAME"
+level_rooms[l] = rm_sugar5 // TODO MAKE LEVEL
+l++
+level_names[l] = "4-7 - NAME"
+level_rooms[l] = rm_intro // TODO MAKE LEVEL
+l++
+level_names[l] = "4-8 - The Finale"
+level_rooms[l] = rm_butter5 // TODO MAKE LEVEL
+l++
+#endregion

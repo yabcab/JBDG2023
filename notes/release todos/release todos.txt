@@ -36,3 +36,4 @@ CHANGES TO MAKE:
 -go thru the level names and change accordingly
 -maybe replace current player with skoimp or a different critter (redo sprites)
 -redo title logo sprite
+-replace or remove paintings

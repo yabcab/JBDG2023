@@ -1,4 +1,4 @@
-draw_text(x,y + bobsin,"FUCK!!\n\nTap / Press Ⓐ / Press Z to continue")/*@"
+draw_text(x,y + bobsin,"Hello!!\n\nThis is a playtest build, DO NOT SHARE.\n\nTap / Press Ⓐ / Press Z to continue")/*@"
 HAPPY BIRTHDAY!!!!!!!!!!
 Hello! Disclaimer!
 

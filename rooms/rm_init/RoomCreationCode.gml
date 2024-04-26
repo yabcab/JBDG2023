@@ -19,7 +19,7 @@ globalvar points; points = 0
 globalvar skip_loading; skip_loading = false
 globalvar version; version = "1.0.devagain"
 
-room_goto(rm_intro5)
+room_goto(rm_intro6)
 
 if os_type = os_windows
 	window_set_size(1920,1080)
@@ -76,8 +76,8 @@ l++
 level_names[l] = "1-5 - The Great Ascent"
 level_rooms[l] = rm_intro5
 l++
-level_names[l] = "1-6 - NAME"
-level_rooms[l] = rm_intro4 // TODO NEW LEVEL
+level_names[l] = "1-6 - Careful Droppings"
+level_rooms[l] = rm_intro6
 l++
 #endregion
 

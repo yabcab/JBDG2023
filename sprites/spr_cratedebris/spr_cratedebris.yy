@@ -90,7 +90,7 @@
   "nineSlice": null,
   "parent": {
     "name": "crate",
-    "path": "folders/Sprites/misc/crate.yy",
+    "path": "folders/misc/crate.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_cratedebris",

@@ -78,7 +78,7 @@
   "nineSlice": null,
   "parent": {
     "name": "particle",
-    "path": "folders/Sprites/misc/particle.yy",
+    "path": "folders/misc/particle.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_confetti",

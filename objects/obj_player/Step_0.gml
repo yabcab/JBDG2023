@@ -1,5 +1,8 @@
 var axdir = gamepad_axis_value(0,gp_axislh)
 var axisv = gamepad_axis_value(0,gp_axislv)
+if talking
+	image_speed = 1
+	
 if KEY_D
 	axisv = 1
 
@@ -23,7 +26,10 @@ switch state
 		{
 			if abs(axdir) > 0 || KEY_L || KEY_R
 			{
-				sprite_index = spr_playerJ_move
+				if abs(hsp) > 10 && sign(hsp) = facing
+					sprite_index = spr_playerJ_run
+				else
+					sprite_index = spr_playerJ_move
 				image_speed = abs(hsp) / 3
 			}
 			else
@@ -79,7 +85,13 @@ switch state
 				if axdir != 0
 					facing = sign(axdir)
 				if abs(axdir) > 0
-					hsp = approach(hsp,(walksp + (holdrun * runsp)) * axdir,0.3)
+				{
+					if abs(hsp) < 6 || facing != sign(hsp)
+						hsp = approach(hsp,(walksp + (holdrun * runsp)) * axdir,0.35)
+					else
+						hsp = approach(hsp,(walksp + (holdrun * runsp)) * axdir,0.1)
+					
+				}
 				else
 					hsp = approach(hsp,0,0.5)
 	
@@ -88,6 +100,7 @@ switch state
 					if place_meeting(x,y,obj_airjump) // bad coding practice. do i care? no, i have hours remaining.
 						play_sfx(sfx_bubblejump)
 					play_sfx(sfx_jump)
+					anim_hurt = false
 					vsp = -15
 					jumping = true
 					hasdoublejump = true

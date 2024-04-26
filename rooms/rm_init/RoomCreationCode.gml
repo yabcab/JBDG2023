@@ -19,7 +19,7 @@ globalvar points; points = 0
 globalvar skip_loading; skip_loading = false
 globalvar version; version = "1.0.devagain"
 
-room_goto(rm_intro6)
+room_goto(rm_intro)
 
 if os_type = os_windows
 	window_set_size(1920,1080)

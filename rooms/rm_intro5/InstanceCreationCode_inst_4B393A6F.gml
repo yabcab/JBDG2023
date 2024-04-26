@@ -1,1 +1,1 @@
-targetroom = rm_intro4
+targetroom = rm_intro6

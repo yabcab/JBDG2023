@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "misc",
-    "path": "folders/Sprites/misc.yy",
+    "path": "folders/misc.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_collects",

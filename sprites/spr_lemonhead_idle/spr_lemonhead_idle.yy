@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "npc",
-    "path": "folders/Sprites/misc/npc.yy",
+    "path": "folders/misc/npc.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_lemonhead_idle",

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "textbg",
-    "path": "folders/Sprites/misc/textbg.yy",
+    "path": "folders/misc/textbg.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_textbg_father",

@@ -7,5 +7,5 @@ if !audio_is_playing(titlemusic)
 		audio_sound_set_track_position(titlemusic,9)
 	else
 		audio_sound_set_track_position(titlemusic,8.5)
-	audio_sound_gain(mu_title,0.3,750)
+	audio_sound_gain(mu_title,0,0)
 }
